@@ -79,3 +79,45 @@ Strings in JavaScript can be accessed and manipulated using various methods. Her
 These methods allow you to work with and manipulate strings effectively.
 
 
+# Operators
+
+Operators are special symbols used to perform operations on operands, which can be values or variables. In JavaScript, there are three main types of operators:
+
+## 1. Arithmetic Operators
+Arithmetic operators are used to perform mathematical operations. Some common arithmetic operators include:
+
+| Operator | Description     |
+|----------|-----------------|
+| `+`      | Addition        |
+| `-`      | Subtraction     |
+| `*`      | Multiplication  |
+| `/`      | Division        |
+| `%`      | Modulus (Remainder) |
+
+These operators allow you to perform basic mathematical calculations in JavaScript.
+
+## 2. Comparison Operators
+Comparison operators are used to compare values and determine the relationship between them. Common comparison operators include:
+
+| Operator | Description            |
+|----------|------------------------|
+| `<`      | Less than              |
+| `>`      | Greater than           |
+| `<=`     | Less than or equal to  |
+| `>=`     | Greater than or equal to|
+
+These operators return a boolean value (`true` or `false`) based on the comparison result.
+
+## 3. Equality Operators
+Equality operators are used to compare values for equality. There are two types of equality operators:
+
+| Operator | Description                                     |
+|----------|-------------------------------------------------|
+| `==`     | Equality (equal without considering data types, performs type coercion if necessary) |
+| `===`    | Strict Equality (equal with consideration of both values and data types)           |
+| `!=`     | Inequality (not equal without considering data types)                               |
+| `!==`    | Strict Inequality (not equal with consideration of both values and data types)      |
+
+These operators allow you to compare values for equality or inequality, with or without considering their data types.
+
+By using these operators, you can perform various operations and comparisons in JavaScript.
