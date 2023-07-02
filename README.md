@@ -50,7 +50,8 @@ JavaScript provides several methods and properties to interact with the DOM elem
 These commands allow you to retrieve specific elements or collections of elements from the DOM, enabling you to modify their attributes, content, or styles.
 
 ## MDN (Mozilla Developer Network)
+
 The Mozilla Developer Network (MDN) is a comprehensive resource for web developers. It provides detailed documentation, guides, tutorials, and examples for various web technologies, 
-including JavaScript and the DOM. It is an excellent reference for understanding the usage and functionality of different DOM methods and properties. You can access MDN at [developer.mozilla.org](https://developer.mozilla.org/).
+including JavaScript and the DOM. It is an excellent reference for understanding the usage and functionality of different DOM methods and properties, for sure we cant remember all commands in js so this site help us tor remember the command and understand it You can access MDN at [developer.mozilla.org](https://developer.mozilla.org/).
 
 
