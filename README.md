@@ -31,4 +31,26 @@ JavaScript code can be written in the following environments:
 3. Online compilers, such as CodePen (background).
 
 
+# DOM (Document Object Model)
+
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It provides a structured representation of the web page,
+allowing JavaScript to interact with and manipulate the elements, attributes, and content within the document.
+
+## How the DOM Works
+When a web page is loaded in a browser, the browser creates a DOM tree based on the HTML or XML structure of the document. This tree consists of various nodes representing elements, attributes, and text within the document. Each element becomes an object, which can be accessed and manipulated using JavaScript.
+
+## Accessing and Manipulating DOM Elements
+JavaScript provides several methods and properties to interact with the DOM elements. Here are some commonly used commands:
+
+- `document.title`: Retrieves or sets the title of the HTML document.
+- `document.querySelector()`: Returns the first element that matches a specified CSS selector.
+- `document.getElementById()`: Retrieves an element by its unique ID.
+- `document.getElementsByTagName()`: Retrieves a collection of elements with the specified tag name.
+
+These commands allow you to retrieve specific elements or collections of elements from the DOM, enabling you to modify their attributes, content, or styles.
+
+## MDN (Mozilla Developer Network)
+The Mozilla Developer Network (MDN) is a comprehensive resource for web developers. It provides detailed documentation, guides, tutorials, and examples for various web technologies, 
+including JavaScript and the DOM. It is an excellent reference for understanding the usage and functionality of different DOM methods and properties. You can access MDN at [developer.mozilla.org](https://developer.mozilla.org/).
+
 
