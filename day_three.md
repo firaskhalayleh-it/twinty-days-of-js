@@ -39,7 +39,8 @@ When calling a function, if you provide a value for a parameter that is not decl
 
 - `return`: Functions can return values, although some functions may not return any value. The difference between using `return` and `console.log` is that `return` is used to pass a value back to the caller, while `console.log` is used for printing output to the console. It's important to note that code after the `return` statement in the same scope is not reachable.
 
-Arrow functions are a shorthand syntax used to create unnamed functions with less code. They can be assigned to variables, like `const res = (a, b) => a + b;`, which is equivalent to:
+Arrow functions are a shorthand syntax used to create unnamed functions with less code. They can be assigned to variables,
+like `const res = (a, b) => a + b;`, which is equivalent to:
 
 ```javascript
 function res(a, b) {
