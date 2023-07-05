@@ -39,7 +39,7 @@ let res = ((2 * 3) + 5) * 7;
 let val = 'value';
 let resolvedValue = val;
 val = 'new value';
-```
+````
 |           | Statements                                 | Expressions                                 |
 |-----------|--------------------------------------------|---------------------------------------------|
 | Purpose   | Perform actions or control flow            | Produce a value                             |
