@@ -40,6 +40,7 @@ let val = 'value';
 let resolvedValue = val;
 val = 'new value';
 ````
+## Statements Vs.Expressions
 |           | Statements                                 | Expressions                                 |
 |-----------|--------------------------------------------|---------------------------------------------|
 | Purpose   | Perform actions or control flow            | Produce a value                             |
