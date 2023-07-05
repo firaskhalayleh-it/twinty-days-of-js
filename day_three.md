@@ -47,3 +47,30 @@ function res(a, b) {
   return a + b;
 }
 ```
+## Scope
+
+Scope refers to where variables and functions are declared and accessible within a program.
+
+1. Scopes are nested within programming.
+2. The widest scope is the global scope, which means variables declared in the global scope can be accessed from anywhere in the program.
+3. Each function has its own scope, and variables declared within a function are only accessible within that function's scope.
+
+When it comes to accessing variables, it depends on the scope in which they are declared. In the global scope, you can access all variables. However, in narrower scopes (such as within a function), you can only access variables declared within that scope or variables declared in wider scopes.
+
+### Let vs. Scope:
+If a variable is declared using `let` in the global scope, it can be accessed within functions. However, you cannot assign a new value to that variable in the global scope. Here's an example:
+
+```javascript
+let num = 5; // Variable declared in global scope
+
+function multiplyByTwo() {
+  console.log(num * 2); // Accessing the variable in a function's scope
+}
+
+multiplyByTwo(); // Output: 10
+
+num = 10; // Assigning a new value in the global scope
+console.log(num); // Output: 10
+```
+### Let vs. Var:
+The main difference between let and var is in their scope behavior. Variables declared with var are function-scoped, meaning they are accessible within the entire function in which they are declared, regardless of block scope. On the other hand, variables declared with let are block-scoped, meaning they are only accessible within the block (such as a loop or conditional statement) in which they are declared. This can help prevent unintended variable hoisting and scoping issues.
