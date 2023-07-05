@@ -83,3 +83,24 @@ let arr2 = arr1;
 arr1[1] = 3;
 ```
 In the above example, arr1 and arr2 both change because they point to the same values.
+# Objects
+
+Objects are a data type that describes complex data. We can use variables to point to different values in our code. In JavaScript, we can access properties of an object using dot notation. Commas are used to separate properties within an object. We can assign properties to objects.
+
+### Object methods:
+1. `join()`: Joins the elements of an object.
+2. `freeze()`: Makes the properties of an object immutable.
+3. Spread (`...`): Used for dividing the values of an array.
+4. `this`: A method that allows us to reference other properties within an object. Example: `this.propertyName`.
+   
+We can also define functions as object properties, and we can include arrays as object properties. Objects can be nested, creating nested objects within objects.
+
+### Built-in objects:
+1. Array: An array can contain objects or other data types.
+2. Document: An object representing the current web page.
+3. Console: An object with properties like `log()`, `warn()`, and `error()`.
+4. Math: An object with methods like `random()` and `PI`.
+5. Strings: Although strings are primitive values, JavaScript automatically wraps them as objects. Strings have methods such as `length`, `toUpperCase()`, `toLowerCase()`, etc.
+
+This is the Markdown representation of the provided text.
+
