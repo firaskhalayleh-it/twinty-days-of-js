@@ -34,7 +34,7 @@ There are two styles for naming variables in JavaScript: camelCase and snake_cas
 
 Evaluating Code: 
 You can put expressions in variables and refresh the value of a variable. For example: 
-```javascript
+````javascript
 let res = ((2 * 3) + 5) * 7;
 let val = 'value';
 let resolvedValue = val;
