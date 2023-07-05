@@ -31,3 +31,18 @@ In the provided HTML document, the JavaScript script is responsible for handling
 
 This script enables the quiz functionality by displaying a statement, allowing the user to select an answer, and providing feedback based on their selection.
 
+# Functions
+
+Functions are used to perform actions or behaviors. They can have parameters that determine the number of values needed to execute the action. When declaring parameters, you cannot directly replace them with values. For example, `const fun = ('value') => {}` would result in an error.
+
+When calling a function, if you provide a value for a parameter that is not declared, it will be ignored.
+
+- `return`: Functions can return values, although some functions may not return any value. The difference between using `return` and `console.log` is that `return` is used to pass a value back to the caller, while `console.log` is used for printing output to the console. It's important to note that code after the `return` statement in the same scope is not reachable.
+
+Arrow functions are a shorthand syntax used to create unnamed functions with less code. They can be assigned to variables, like `const res = (a, b) => a + b;`, which is equivalent to:
+
+```javascript
+function res(a, b) {
+  return a + b;
+}
+```
