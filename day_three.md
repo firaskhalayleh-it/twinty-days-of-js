@@ -74,3 +74,23 @@ console.log(num); // Output: 10
 ```
 ### Let vs. Var:
 The main difference between let and var is in their scope behavior. Variables declared with var are function-scoped, meaning they are accessible within the entire function in which they are declared, regardless of block scope. On the other hand, variables declared with let are block-scoped, meaning they are only accessible within the block (such as a loop or conditional statement) in which they are declared. This can help prevent unintended variable hoisting and scoping issues.
+Here's the code example explaining the difference between let and var in JavaScript, converted to Markdown format:
+
+```javascript
+function example() {
+  var x = 10; // Variable declared with var
+  let y = 20; // Variable declared with let
+
+  if (true) {
+    var x = 30; // Re-declaring x with var inside a block
+    let y = 40; // Declaring y with let inside a block
+    console.log("Inside Block - var x:", x); // Output: 30
+    console.log("Inside Block - let y:", y); // Output: 40
+  }
+
+  console.log("Outside Block - var x:", x); // Output: 30
+  console.log("Outside Block - let y:", y); // Output: 20
+}
+
+example();
+```
