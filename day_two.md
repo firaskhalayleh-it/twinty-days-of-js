@@ -1,5 +1,5 @@
 # day two of learining js 
-Expressions: 
+## Expressions: 
 The snippets that use values and operations are expressions. 
 
 Keywords: 
