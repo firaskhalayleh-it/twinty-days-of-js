@@ -39,4 +39,13 @@ let res = ((2 * 3) + 5) * 7;
 let val = 'value';
 let resolvedValue = val;
 val = 'new value';
-
+```
+|           | Statements                                 | Expressions                                 |
+|-----------|--------------------------------------------|---------------------------------------------|
+| Purpose   | Perform actions or control flow            | Produce a value                             |
+| Result    | Does not always produce a value            | Always produces a value                      |
+| Examples  | `if` statement, `for` loop, function declaration   | Arithmetic operations, function calls, variable assignments |
+| Usage     | Used to execute code                       | Used to compute values                       |
+| Side Effects | Statements can have side effects        | Expressions are generally side effect-free   |
+| Order     | Can be grouped into blocks or sequences    | Can be nested or combined within statements |
+| Composition | Statements cannot be nested within expressions  | Expressions can be nested within statements |
