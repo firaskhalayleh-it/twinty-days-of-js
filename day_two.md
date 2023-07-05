@@ -43,7 +43,7 @@ val = 'new value';
 ## Statements Vs.Expressions
 |           | Statements                                 | Expressions                                 |
 |-----------|--------------------------------------------|---------------------------------------------|
-| Purpose   | Perform actions or control flow            | Produce a value                             |
+| Purpose   | tell js to do something            | ask js for particular value                       |
 | Result    | Does not always produce a value            | Always produces a value                      |
 | Examples  | `if` statement, `for` loop, function declaration   | Arithmetic operations, function calls, variable assignments |
 | Usage     | Used to execute code                       | Used to compute values                       |
