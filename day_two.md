@@ -50,3 +50,36 @@ val = 'new value';
 | Side Effects | Statements can have side effects        | Expressions are generally side effect-free   |
 | Order     | Can be grouped into blocks or sequences    | Can be nested or combined within statements |
 | Composition | Statements cannot be nested within expressions  | Expressions can be nested within statements |
+
+
+## Arrays:
+Arrays allow us to store multiple values together. For example, string arrays have properties like length, square brackets `[]` for accessing elements by index, and methods like `indexOf` and `includes`.
+
+### Some methods for arrays:
+1. `pop()`: Removes and returns the last element of the array.
+2. `push()`: Adds elements to the end of the array. You can push objects or nested arrays.
+3. `sort()`: Sorts the elements of the array in ascending order.
+4. `join()`: Joins the elements of the array into a single string.
+5. `concat()`: Combines multiple arrays into a new array.
+
+Arrays can hold multiple types of data or be empty or have a single value. Unlike strings, arrays are mutable and can be modified.
+
+Here's a table summarizing the differences between `push()` and `concat()`:
+
+| Method | Purpose                                           | Modifies Original Array | Returns                |
+|--------|---------------------------------------------------|-------------------------|------------------------|
+| `push` | Adds elements to the end of the array              | Yes                     | Returns the new length |
+| `concat` | Combines arrays and returns a new concatenated array | No                    | Returns a new array    |
+
+When declaring an array, a new variable is created with values assigned to its indexes. The indexes point to the actual values stored in the array.
+
+Using `const` with arrays:
+With `const`, you can't reassign the array itself, but you can modify its contents.
+
+Declaring variables that point to the array:
+```javascript
+let arr1 = [0, 1, 2];
+let arr2 = arr1;
+arr1[1] = 3;
+```
+In the above example, arr1 and arr2 both change because they point to the same values.
