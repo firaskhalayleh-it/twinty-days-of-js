@@ -4,10 +4,10 @@
 <details>
   <summary>Table of Contents</summary>
 
-  - [JavaScript Introduction](#day_one.md#javascript-introduction)
-  - [DOM (Document Object Model)](day_one.md#dom-document-object-model)
-  - [Values and Data Types](day_one.md#values-and-data-types)
-  - [Operators](day_one.md#operators)
+  - [JavaScript Introduction](#javascript-introduction)
+  - [DOM (Document Object Model)](#dom-document-object-model)
+  - [Values and Data Types](#values-and-data-types)
+  - [Operators](#operators)
 </details>
 ![](https://img.shields.io/github/stars/pandao/day_one.md.svg) ![](https://img.shields.io/github/forks/pandao/day_one.md.svg) ![](https://img.shields.io/github/tag/pandao/day_one.md.svg) ![](https://img.shields.io/github/release/pandao/day_one.md.svg) ![](https://img.shields.io/github/issues/pandao/day_one.md.svg) ![](https://img.shields.io/bower/v/day_one.md.svg)
 
