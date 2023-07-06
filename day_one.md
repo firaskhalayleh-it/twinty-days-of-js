@@ -9,7 +9,10 @@
   - [Values and Data Types](#values-and-data-types)
   - [Operators](#operators)
 </details>
-[![GitHub stars](https://github.com/firaskhalayleh-it/twinty-days-of-js/blob/main/day_one.md)]
+
+
+[![GitHub stars](https://img.shields.io/github/stars/firaskhalayleh-it/twinty-days-of-js.svg?style=social)](https://github.com/firaskhalayleh-it/twinty-days-of-js/stargazers)
+
 
 
 # JavaScript Introduction
