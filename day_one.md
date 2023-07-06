@@ -7,7 +7,7 @@
   - [JavaScript Introduction](#day-1-javascript-introduction)
   - [DOM (Document Object Model)](#day-2-dom-document-object-model)
   - [Values and Data Types](#day-3-values-and-data-types)
-  - [Operators](#day-4-operators)
+  - [Operators]((https://github.com/firaskhalayleh-it/twinty-days-of-js/blob/main/day_one.md#operators))
 </details>
 
 # JavaScript Introduction
