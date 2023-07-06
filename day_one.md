@@ -5,7 +5,7 @@
   <summary>Table of Contents</summary>
 
   - [JavaScript Introduction](#day_one/#javascript-introduction)
-  - [DOM (Document Object Model)](#day-2-dom-document-object-model)
+  - [DOM (Document Object Model)](day_one.md#dom-document-object-model)
   - [Values and Data Types](#day-3-values-and-data-types)
   - [Operators]([day(https://github.com/firaskhalayleh-it/twinty-days-of-js/blob/main/day_one.md#operators))
 </details>
