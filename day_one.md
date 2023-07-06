@@ -4,10 +4,10 @@
 <details>
   <summary>Table of Contents</summary>
 
-  - [JavaScript Introduction](#day-1-javascript-introduction)
+  - [JavaScript Introduction](#day_one)
   - [DOM (Document Object Model)](#day-2-dom-document-object-model)
   - [Values and Data Types](#day-3-values-and-data-types)
-  - [Operators]((https://github.com/firaskhalayleh-it/twinty-days-of-js/blob/main/day_one.md#operators))
+  - [Operators]([day(https://github.com/firaskhalayleh-it/twinty-days-of-js/blob/main/day_one.md#operators))
 </details>
 
 # JavaScript Introduction
