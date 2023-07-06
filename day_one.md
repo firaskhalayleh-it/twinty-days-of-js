@@ -9,6 +9,7 @@
   - [Values and Data Types](day_one.md#values-and-data-types)
   - [Operators](day_one.md#operators)
 </details>
+![](https://img.shields.io/github/stars/pandao/day_one.md.svg) ![](https://img.shields.io/github/forks/pandao/day_one.md.svg) ![](https://img.shields.io/github/tag/pandao/day_one.md.svg) ![](https://img.shields.io/github/release/pandao/day_one.md.svg) ![](https://img.shields.io/github/issues/pandao/day_one.md.svg) ![](https://img.shields.io/bower/v/day_one.md.svg)
 
 # JavaScript Introduction
 
