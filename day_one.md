@@ -3,7 +3,6 @@
 ## day number one :
 **Table of Contents**
 [TOCM]
-
 [TOC]
 # JavaScript Introduction
 
