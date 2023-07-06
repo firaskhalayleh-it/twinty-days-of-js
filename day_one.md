@@ -9,7 +9,12 @@
   - [Values and Data Types](#values-and-data-types)
   - [Operators](#operators)
 </details>
-![](https://img.shields.io/github/stars/pandao/day_one.md.svg) ![](https://img.shields.io/github/forks/pandao/day_one.md.svg) ![](https://img.shields.io/github/tag/pandao/day_one.md.svg) ![](https://img.shields.io/github/release/pandao/day_one.md.svg) ![](https://img.shields.io/github/issues/pandao/day_one.md.svg) ![](https://img.shields.io/bower/v/day_one.md.svg)
+![](https://img.shields.io/github/stars/pandao/day_one.md.svg) 
+![](https://img.shields.io/github/forks/pandao/day_one.md.svg) 
+![](https://img.shields.io/github/tag/pandao/day_one.md.svg) 
+![](https://img.shields.io/github/release/pandao/day_one.md.svg)
+![](https://img.shields.io/github/issues/pandao/day_one.md.svg) 
+![](https://img.shields.io/bower/v/day_one.md.svg)
 
 # JavaScript Introduction
 
