@@ -1,9 +1,14 @@
 # Learning JavaScript from scratch to a professional level in just 20 days
 
 ## day number one :
-**Table of Contents**
-[TOCM]
-[TOC]
+<details>
+  <summary>Table of Contents</summary>
+
+  - [Day 1: JavaScript Introduction](#day-1-javascript-introduction)
+  - [Day 2: DOM (Document Object Model)](#day-2-dom-document-object-model)
+  - [Day 3: Values and Data Types](#day-3-values-and-data-types)
+  - [Day 4: Operators](#day-4-operators)
+</details>
 # JavaScript Introduction
 
 The purpose of this course is to provide an introduction to JavaScript, covering its core principles and focusing on practical projects. 
