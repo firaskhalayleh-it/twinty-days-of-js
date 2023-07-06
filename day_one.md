@@ -3,6 +3,8 @@
 ## day number one :
 
 [TOCM]
+
+[TOC]
 # JavaScript Introduction
 
 The purpose of this course is to provide an introduction to JavaScript, covering its core principles and focusing on practical projects. 
