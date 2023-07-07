@@ -135,3 +135,7 @@ Equality operators are used to compare values for equality. There are two types 
 These operators allow you to compare values for equality or inequality, with or without considering their data types.
 
 By using these operators, you can perform various operations and comparisons in JavaScript.
+# tic tac toe project
+<iframe height="500" style="width: 100%;" scrolling="no" title="CodePen Example" src="https://codepen.io/firaskhalayleh-it/details/zYMEZgQ" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/your-username/pen/your-pen-slug">(https://codepen.io/firaskhalayleh-it/details/zYMEZgQ)">CodePen code</a> by firas khalayleh(<a href="https://codepen.io/your-username" >(https://codepen.io/firaskhalayleh-it/details/zYMEZgQ)</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
