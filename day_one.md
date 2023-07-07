@@ -142,7 +142,7 @@ By using these operators, you can perform various operations and comparisons in 
 You can see the live example on CodePen:
 
 
-
+```
 <iframe height="500" style="width: 100%;" scrolling="no" title="CodePen Example" src="https://codepen.io/firaskhalayleh-it/embed/zYMEZgQ?height=500&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   
   See the Pen <a href="https://codepen.io/firaskhalayleh-it/pen/zYMEZgQ">CodePen Example</a> by Firas Khalayleh (<a href="https://codepen.io/firaskhalayleh-it">@firaskhalayleh-it</a>) on <a href="https://codepen.io">CodePen</a>.
@@ -151,5 +151,5 @@ You can see the live example on CodePen:
 
 
 
-
+```
 
