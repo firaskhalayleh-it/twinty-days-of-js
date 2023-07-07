@@ -136,6 +136,12 @@ These operators allow you to compare values for equality or inequality, with or 
 
 By using these operators, you can perform various operations and comparisons in JavaScript.
 # tic tac toe project
-<iframe height="500" style="width: 100%;" scrolling="no" title="CodePen Example" src="https://codepen.io/firaskhalayleh-it/details/zYMEZgQ" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/your-username/pen/your-pen-slug">(https://codepen.io/firaskhalayleh-it/details/zYMEZgQ)">CodePen code</a> by firas khalayleh(<a href="https://codepen.io/your-username" >(https://codepen.io/firaskhalayleh-it/details/zYMEZgQ)</a>) on <a href="https://codepen.io">CodePen</a>.
+
+### My CodePen Example
+
+You can see the live example on CodePen:
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="CodePen Example" src="https://codepen.io/firaskhalayleh-it/embed/zYMEZgQ?height=500&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/firaskhalayleh-it/pen/zYMEZgQ">CodePen Example</a> by Firas Khalayleh (<a href="https://codepen.io/firaskhalayleh-it">@firaskhalayleh-it</a>) on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
