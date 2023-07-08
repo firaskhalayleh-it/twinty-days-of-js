@@ -159,5 +159,20 @@ a *= 5;
 b *= 3;
 c *= 10;
 ```
+### homework [two](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator):
+``` javascript
+let myStr='This is the first sentence.';
+myStr += ' This is the second sentence.';
+```
+
+### homework [three](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
+``` javascirpt
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length-2]; // Change this line
+```
+
 
 
