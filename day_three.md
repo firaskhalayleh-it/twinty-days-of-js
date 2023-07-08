@@ -102,7 +102,7 @@ function timesFive (num){
   return num*5;
 }
 ```
-### homework [two] (https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
+### homework [two](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
 ``` javascript
 // Declare the myGlobal variable below this line
 
