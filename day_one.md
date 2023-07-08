@@ -147,6 +147,17 @@ You can see the live example on CodePen:
   See the Pen <a href="https://codepen.io/firaskhalayleh-it/details/zYMEZgQ">CodePen Example</a> by Firas Khalayleh (<a href="https://codepen.io/firaskhalayleh-it">@firaskhalayleh-it</a>) on <a href="https://codepen.io">CodePen</a>.
 
 
+# homeworks solutions : 
+### homework [one](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions):
+``` javascript
+let a = 5;
+let b = 12;
+let c = 4.6;
 
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+```
 
 
