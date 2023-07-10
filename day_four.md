@@ -60,6 +60,52 @@ console.log(evenNumbers); // Output: [2, 4]
 ```
 in this example, we have an array numbers containing [1, 2, 3, 4, 5]. The filter function is called on this array and checks the condition provided by the arrow function. Only the elements that satisfy the condition (in this case, even numbers) are included in the new array evenNumbers.
 
+# Guess the Doggo Quiz
+
+## Description
+
+The provided code consists of an HTML file with an embedded JavaScript script that implements the functionality of a "Guess the Doggo" quiz. This README provides a description of the script used in the code.
+
+## Script Overview
+
+The JavaScript script in the code is responsible for handling the quiz functionality. It includes the following components:
+
+1. Constants:
+   - `RANDOM_IMG_ENDPOINT`: Represents the endpoint URL for fetching a random dog image.
+   - `BREEDS`: An array containing various dog breed names.
+
+2. Utility Functions:
+   - `getRandomElement(array)`: Takes an array as input and returns a randomly selected element from that array.
+   - `shuffleArray(array)`: Takes an array as input and shuffles the order of its elements randomly.
+
+3. Function Declarations:
+   - `getMultipleChoices(n, correctAnswer, array)`: Generates multiple choices for the quiz by selecting `n` options, including the `correctAnswer`, from the provided `array`. It ensures there are no duplicates in the choices.
+   - `getBreedFromURL(url)`: Extracts the breed name from the provided URL of a dog image and formats it as a string.
+   - `fetchMessage(url)`: Fetches the content from the provided URL, parses the response as a JSON object, and returns the value of the `message` property from the response body.
+   - `renderButtons(choicesArray, correctAnswer)`: Renders the multiple-choice buttons on the page using the choices from `choicesArray`. It attaches an event listener to each button to handle user interaction.
+   - `renderQuiz(imgUrl, correctAnswer, choices)`: Renders the quiz content on the page, including the dog image, multiple-choice buttons, and handles the image load event.
+
+4. `loadQuizData()`: An async function that fetches the required data for the quiz, including a random dog image URL, the correct breed answer, and multiple choice options. It returns a promise with the retrieved data.
+
+5. Execution:
+   - Inside the `loadQuizData()` function, the retrieved data is destructured into variables `imgUrl`, `correctAnswer`, and `choices`.
+   - The `renderQuiz()` function is called with the retrieved data to display the dog image, answer options, and handle user interaction.
+
+The script utilizes event listeners, asynchronous functions, and utility functions to dynamically generate the quiz and provide an interactive user experience.
+
+## Usage
+
+To use the script, follow these steps:
+
+1. Open the HTML file in a web browser.
+2. The script will fetch a random dog image and display it along with multiple-choice buttons.
+3. Choose the correct breed from the options provided.
+4. The script will indicate whether the chosen answer is correct or incorrect.
+5. Enjoy playing the "Guess the Doggo" quiz!
+
+## License
+
+This code is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use and modify it according to your needs.
 
 
 # homeworks :
@@ -105,6 +151,7 @@ else if (strokes >= par +3){
 
 console.log(golfScore(5, 9))
 ```
+
 ### homework [three](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array) :
 ``` javascript
 // The global variable
