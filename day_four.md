@@ -61,7 +61,7 @@ console.log(evenNumbers); // Output: [2, 4]
 in this example, we have an array numbers containing [1, 2, 3, 4, 5]. The filter function is called on this array and checks the condition provided by the arrow function. Only the elements that satisfy the condition (in this case, even numbers) are included in the new array evenNumbers.
 
 
-Example:
+
 # homeworks :
 ### homework [one](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators):
 ``` javascript
