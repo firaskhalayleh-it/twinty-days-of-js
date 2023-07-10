@@ -1,8 +1,67 @@
 # day four
 
-## events & handlers
+## Events & Handlers
+
+Events in JavaScript are actions or occurrences that happen, such as a button click or key press. Handlers are functions or code blocks that execute in response to specific events. They define the behavior of a program based on user interactions or system events.
+
+**Example:**
+
+```javascript
+// Event handler for a button click
+function handleClick() {
+  console.log("Button clicked!");
+}
+
+// Attaching the handler to a button element
+const button = document.querySelector("#myButton");
+button.addEventListener("click", handleClick);
+```
+## Conditionals
+
+Conditionals in JavaScript allow you to make decisions based on certain conditions. They check whether a given condition is true or false and execute different blocks of code accordingly. The common conditional statements are `if`, `else if`, and `else`.
+
+**Example:**
+
+```javascript
+// Conditional statement
+let age = 25;
+
+if (age < 18) {
+  console.log("You are underage.");
+} else if (age >= 18 && age < 65) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a senior citizen.");
+}
+```
+## Map & Filter
+
+Map and filter are higher-order functions in JavaScript used to transform or filter elements in a collection.
+
+### Map
+
+The `map` function applies a given function to each element of a collection and returns a new collection with the transformed elements.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
+In this example, we have an array numbers containing [1, 2, 3, 4, 5]. The map function is called on this array and applies the provided arrow function to each element. The result is a new array doubled that contains each element of numbers multiplied by 2.
+
+### Filter
+The filter function creates a new collection containing only the elements that satisfy a given condition.
+``` javascript
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+```
+in this example, we have an array numbers containing [1, 2, 3, 4, 5]. The filter function is called on this array and checks the condition provided by the arrow function. Only the elements that satisfy the condition (in this case, even numbers) are included in the new array evenNumbers.
 
 
+Example:
 # homeworks :
 ### homework [one](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators):
 ``` javascript
