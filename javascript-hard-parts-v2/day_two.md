@@ -39,3 +39,27 @@ myFunction(); // Output: Hello
 In this example, the `innerFunction` is returned from the `outerFunction`. Even though `outerFunction` has completed execution, `innerFunction` retains access to the `outerVariable` through closure. Invoking `myFunction` logs the value of `outerVariable`, demonstrating the persistence of data via closure.
 
 Closure plays a crucial role in various aspects of JavaScript development, including advanced function creation, design patterns, and performance optimization. Understanding and effectively utilizing closure can greatly enhance your JavaScript programming skills.
+
+
+
+   +---------------------------+
+   |                           |
+   |         outerFunction      |
+   |    +-----------------+    |
+   |    |  outerVariable  |    |
+   |    +-----------------+    |
+   |                           |
+   +-----------+---------------+
+               |
+               | Closure
+               |
+   +-----------v---------------+
+   |                           |
+   |       innerFunction        |
+   |    +-----------------+    |
+   |    |  Closure (Link) |----+---> outerVariable
+   |    +-----------------+    |
+   |                           |
+   +---------------------------+
+
+
