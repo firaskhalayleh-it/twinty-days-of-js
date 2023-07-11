@@ -44,7 +44,7 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
 
    +---------------------------+
    |                           |
-   |         outerFunction      |
+   |       outerFunction       |
    |    +-----------------+    |
    |    |  outerVariable  |    |
    |    +-----------------+    |
@@ -55,7 +55,7 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
                |
    +-----------v---------------+
    |                           |
-   |       innerFunction        |
+   |       innerFunction       |
    |    +-----------------+    |
    |    |  Closure (Link) |----+---> outerVariable
    |    +-----------------+    |
