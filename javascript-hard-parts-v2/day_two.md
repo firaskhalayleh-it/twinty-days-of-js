@@ -42,7 +42,7 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
 
 
 
-```Textik
+```ASCII Flow
    +---------------------------+
    |                           |
    |       Execution Context   |
