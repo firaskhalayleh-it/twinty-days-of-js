@@ -39,9 +39,63 @@ Each module includes a series of video lectures, readings, and exercises.
 
 
 ## javascript principles
+there are main concepts that the course taking it like thread of execution ,memory and call stack. with these principles we will having more informaiton and practice with how the porgram works .
+#### thread of execution :
+js is line by line language that mean it reads one line of code and run in one moment of time .
+#### memeory
+it can store functions and data(strings, numbers,boolean etc)
+#### call stack
+it is a traditional stack that stores the functions that must be run in the execution context.
+## functions & callbacks:
+- Enables powerful pro-level functions like map, filter, reduce (a core aspect of functional programming)
+- Makes our code more declarative and readable
+- generalizing the function makes the function reusable as much as possible by provice perimeters/
+## functions:
+every function has when execute two main things :
+1. memory.
+2. thread of execution.
+   ``` javascript
+function tensquared (){
+return 10*10;
+}
+```
+this function is not good ,why? couse it break DRY principle (dont repeat yourself).
+so we use parameters and callback functions to having more generalized function
+
+## execution context :
+created to run the code of function they have 2 parts :
+1. thread of execution
+2. memory
+- foreach function we creat a mini execution context on the main one.
+- the main file has execution context named main execution context (global)
+- the number of execution that runs in one time is one.
+
+## generalizing functions
+
+The `copyArrayAndMultiplyBy2` function creates a new array called `output`. It then loops through the `myArray` array, multiplying each element by 2 and pushing the doubled element into the `output` array. Finally, the `copyArrayAndMultiplyBy2` function returns the `output` array.
+
+After walking through the code, Will Sentance points out that the function could be simplified by using the `map()` function. The `map()` function takes a function and an array as arguments, and it returns a new array with the results of applying the function to each element of the original array.
+
+Will Sentance then rewrites the `copyArrayAndMultiplyBy2` function using the `map()` function. The new function is called `copyArrayAndMultiplyBy2UsingMap`.
+
+The `copyArrayAndMultiplyBy2UsingMap` function takes an array as an argument and returns a new array with each element doubled. The function works by using the `map()` function to apply the function `x * 2` to each element of the original array.
+
+Will Sentance then compares the two functions and shows that the `copyArrayAndMultiplyBy2UsingMap` function is more concise and easier to read.
+
+The video ends with Will Sentance discussing the benefits of using the `map()` function. He points out that the `map()` function is a powerful tool that can be used to simplify code and make it easier to read.
+
+Here are some of the key points from the video:
+
+* The `copyArrayAndMultiplyBy2` function takes in an array and returns a new array with each element doubled.
+* The `map()` function takes a function and an array as arguments, and it returns a new array with the results of applying the function to each element of the original array.
+* The `copyArrayAndMultiplyBy2UsingMap` function is a more concise and easier-to-read version of the `copyArrayAndMultiplyBy2` function.
+* The `map()` function is a powerful tool that can be used to simplify code and make it easier to read.
+  
 
 
-## functions & callbacks 
+
+
+
 
 
 
