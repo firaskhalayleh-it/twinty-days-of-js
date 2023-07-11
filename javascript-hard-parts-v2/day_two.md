@@ -40,14 +40,19 @@ In this example, the `innerFunction` is returned from the `outerFunction`. Even 
 
 Closure plays a crucial role in various aspects of JavaScript development, including advanced function creation, design patterns, and performance optimization. Understanding and effectively utilizing closure can greatly enhance your JavaScript programming skills.
 
-```PlantUML
 
+
+```mermaid
    +---------------------------+
    |                           |
-   |       outerFunction       |
-   |    +-----------------+    |
-   |    |  outerVariable  |    |
-   |    +-----------------+    |
+   |       Execution Context   |
+   |                           |
+   |   +-------------------+   |
+   |   |       Memory      |   |
+   |   |                   |   |
+   |   |  outerVariable    |   |
+   |   |                   |   |
+   |   +-------------------+   |
    |                           |
    +-----------+---------------+
                |
@@ -55,11 +60,18 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
                |
    +-----------v---------------+
    |                           |
-   |       innerFunction       |
-   |    +-----------------+    |
-   |    |  Closure (Link) |----+---> outerVariable
-   |    +-----------------+    |
+   |       Execution Context   |
+   |                           |
+   |   +-------------------+   |
+   |   |       Memory      |   |
+   |   |                   |   |
+   |   |  Closure (Link)   |---+---> outerVariable
+   |   |                   |   |
+   |   +-------------------+   |
    |                           |
    +---------------------------+
-
 ```
+
+In this Markdown diagram, the execution contexts are represented by boxes, and the memory sections are denoted by indentation within those boxes. The arrow represents the closure link between `innerFunction` and `outerVariable`, indicating that `innerFunction` has access to the outer variable through closure.
+
+This Markdown diagram provides a visual representation of the execution contexts, memory, and the connection established by closure.
