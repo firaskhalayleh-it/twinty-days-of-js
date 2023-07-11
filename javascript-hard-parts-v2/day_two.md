@@ -51,6 +51,22 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
     C --> D(outerVariable)
 
 ```
+```plantuml
+@startuml
+box "outerFunction" #LightBlue
+    participant "outerVariable"
+end box
+
+box "innerFunction" #LightGreen
+    participant "Closure (Link)" as link
+    participant "outerVariable" as outerVar
+end box
+
+outerFunction --> link
+link --> outerVar
+
+@enduml
+```
 
 In this Markdown diagram, the execution contexts are represented by boxes, and the memory sections are denoted by indentation within those boxes. The arrow represents the closure link between `innerFunction` and `outerVariable`, indicating that `innerFunction` has access to the outer variable through closure.
 
