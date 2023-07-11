@@ -1,6 +1,6 @@
 # day one of learinig course javascript hard parts v2
-## introduction
-# Introduction
+
+## Introduction
 
 This course will teach you the fundamentals of JavaScript, including:
 
@@ -123,6 +123,35 @@ In this example, the callback function is `multiplyByTwo`. However, any function
 
 To run this code, you can save it as a JavaScript file and then open it in a JavaScript debugger. You can also run it in the browser by pasting it into the console.
 
+
+## higher-order function and callbacks
+
+
+Higher-order functions and callbacks are a powerful way to make code more reusable and declarative.
+
+A higher-order function is a function that takes in a function as an argument, or returns a function as a value.
+
+A callback function is a function that is passed to another function as an argument, and then called by that function.
+
+The `copyArrayManipulate` function is a higher-order function that takes in a callback function as an argument.
+
+The `multiplyBy2` function is a callback function that multiplies its argument by 2.
+
+The `copyArrayManipulate` function can be used to create a new array with each element multiplied by 2.
+
+Here is an example of how the `copyArrayManipulate` function can be used:
+
+
+
+
+```javascript
+const myArray = [1, 2, 3];
+const newArray = copyArrayManipulate(myArray, multiplyBy2);
+
+console.log(newArray); // [2, 4, 6]
+
+```
+As you can see, the `copyArrayManipulate` function takes the myArray array as an argument, and the `multiplyBy2` callback function as another argument. The `copyArrayManipulate` function then iterates through the myArray array, and calls the `multiplyBy2` function on each element. The `multiplyBy2` function then multiplies each element by 2, and the `copyArrayManipulate` function returns a new array with the multiplied elements.
 
 
 
