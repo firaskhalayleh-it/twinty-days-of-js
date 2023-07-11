@@ -59,6 +59,7 @@ function tensquared (){
 return 10*10;
 }
 ```
+
 this function is not good ,why? couse it break DRY principle (dont repeat yourself).
 so we use parameters and callback functions to having more generalized function
 
