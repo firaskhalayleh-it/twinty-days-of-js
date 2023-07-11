@@ -193,7 +193,10 @@ will log the window object, because the arrow function is defined in the global 
 Overall, arrow functions are a powerful new feature in JavaScript. They can make your code more concise, readable, and efficient. If you haven't used them yet, I encourage you to give them a try.
 
 ## pair programing:
-Sure, here are some tips for pair programming:
+
+most active way to grow us as software engineer you must be :
+1. searcher
+2. stackoverflower
 
 * **Set clear expectations.** Before you start pair programming, it's important to set clear expectations about your roles and responsibilities. Who will be the driver and who will be the navigator? What kind of communication style do you prefer?
 * **Be open to feedback.** When you're pair programming, be open to feedback from your partner. They may have different ideas about how to solve a problem, or they may be able to see errors in your code that you've missed.
