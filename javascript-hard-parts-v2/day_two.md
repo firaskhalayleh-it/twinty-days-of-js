@@ -51,7 +51,13 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
     C --> D(outerVariable)
 
 ```
+
+
+
 Apologies for the confusion. Here's the corrected PlantUML code:
+
+
+
 
 ```plantuml
 @startuml
