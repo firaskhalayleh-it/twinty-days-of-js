@@ -157,7 +157,55 @@ As you can see, the `copyArrayManipulate` function takes the myArray array as an
 
 
 
+## arrow function
 
+Arrow functions are a new feature in JavaScript that were introduced in ES6. They are a concise way to write anonymous functions, and they can be used in a variety of ways.
+
+One of the benefits of arrow functions is that they can make your code more concise and readable. For example, the following code:
+
+```javascript
+function double(number) {
+  return number * 2;
+}
+```
+
+can be written as an arrow function as follows:
+
+```javascript
+const double = (number) => number * 2;
+```
+
+As you can see, the arrow function is much shorter and easier to read.
+
+Another benefit of arrow functions is that they have different this binding rules than regular functions. In regular functions, the this keyword refers to the object that called the function. However, in arrow functions, the this keyword refers to the object that defined the arrow function.
+
+This can be useful in some cases, such as when you are using arrow functions as callbacks. For example, the following code:
+
+```javascript
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+  console.log(this); // window
+});
+```
+
+will log the window object, because the arrow function is defined in the global scope.
+
+Overall, arrow functions are a powerful new feature in JavaScript. They can make your code more concise, readable, and efficient. If you haven't used them yet, I encourage you to give them a try.
+
+## pair programing:
+Sure, here are some tips for pair programming:
+
+* **Set clear expectations.** Before you start pair programming, it's important to set clear expectations about your roles and responsibilities. Who will be the driver and who will be the navigator? What kind of communication style do you prefer?
+* **Be open to feedback.** When you're pair programming, be open to feedback from your partner. They may have different ideas about how to solve a problem, or they may be able to see errors in your code that you've missed.
+* **Be patient.** Pair programming can be a slow process at first, as you get used to working together. But it's important to be patient and to communicate openly with your partner.
+* **Have fun!** Pair programming can be a lot of fun, if you're willing to experiment and learn from each other. So relax, enjoy the process, and learn as much as you can.
+
+Here are some additional tips:
+
+* **Take turns being the driver and the navigator.** This will help you to learn from each other and to improve your skills.
+* **Don't be afraid to ask questions.** If you don't understand something, ask your partner for help.
+* **Take breaks.** Pair programming can be mentally demanding, so it's important to take breaks every 20-30 minutes.
+* **Get feedback from others.** Once you've finished pair programming, ask someone else to review your code. This can help you to identify any errors or areas for improvement.
 
 
 
