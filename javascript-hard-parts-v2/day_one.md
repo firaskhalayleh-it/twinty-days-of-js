@@ -54,7 +54,8 @@ it is a traditional stack that stores the functions that must be run in the exec
 every function has when execute two main things :
 1. memory.
 2. thread of execution.
-   ``` javascript
+
+``` javascript
 function tensquared (){
 return 10*10;
 }
