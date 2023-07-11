@@ -42,41 +42,30 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
 
 
 
-```mermaid
- graph LR
-    A(outerFunction) --> B((outerVariable))
-    B --> A
-    A -- Closure --> C(innerFunction)
-    C -->|Link| B
-    C --> D(outerVariable)
+```
+   +---------------------------+
+   |                           |
+   |         outerFunction     |
+   |    +-----------------+    |
+   |    |  outerVariable  |    |
+   |    +-----------------+    |
+   |                           |
+   +-----------+---------------+
+               |
+               | Closure
+               |
+   +-----------v---------------+
+   |                           |
+   |       innerFunction        |
+   |    +-----------------+    |
+   |    |  Closure (Link) |----+---> outerVariable
+   |    +-----------------+    |
+   |                           |
+   +---------------------------+
+
+
 
 ```
 
 
 
-Apologies for the confusion. Here's the corrected PlantUML code:
-
-
-
-
-```plantuml
-@startuml
-box "outerFunction" #LightBlue
-    participant outerVariable
-end box
-
-box "innerFunction" #LightGreen
-    participant "Closure (Link)" as link
-    participant outerVariable as outerVar
-end box
-
-outerFunction --> link
-link --> outerVar
-
-@enduml
-```
-
-In this corrected version, the participant names (`outerVariable` and `outerVar`) are without quotation marks. Please note that the rendering of PlantUML diagrams may vary depending on the tool or environment used to view them.
-In this Markdown diagram, the execution contexts are represented by boxes, and the memory sections are denoted by indentation within those boxes. The arrow represents the closure link between `innerFunction` and `outerVariable`, indicating that `innerFunction` has access to the outer variable through closure.
-
-This Markdown diagram provides a visual representation of the execution contexts, memory, and the connection established by closure.
