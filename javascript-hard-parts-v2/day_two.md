@@ -40,7 +40,7 @@ In this example, the `innerFunction` is returned from the `outerFunction`. Even 
 
 Closure plays a crucial role in various aspects of JavaScript development, including advanced function creation, design patterns, and performance optimization. Understanding and effectively utilizing closure can greatly enhance your JavaScript programming skills.
 
-
+```PlantUML
 
    +---------------------------+
    |                           |
@@ -62,4 +62,4 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
    |                           |
    +---------------------------+
 
-
+```
