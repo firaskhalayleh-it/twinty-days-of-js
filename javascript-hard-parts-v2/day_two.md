@@ -42,34 +42,14 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
 
 
 
-```asciiflow
-   +---------------------------+
-   |                           |
-   |       Execution Context   |
-   |                           |
-   |   +-------------------+   |
-   |   |       Memory      |   |
-   |   |                   |   |
-   |   |  outerVariable    |   |
-   |   |                   |   |
-   |   +-------------------+   |
-   |                           |
-   +-----------+---------------+
-               |
-               | Closure
-               |
-   +-----------v---------------+
-   |                           |
-   |       Execution Context   |
-   |                           |
-   |   +-------------------+   |
-   |   |       Memory      |   |
-   |   |                   |   |
-   |   |  Closure (Link)   |---+---> outerVariable
-   |   |                   |   |
-   |   +-------------------+   |
-   |                           |
-   +---------------------------+
+```Mermaid
+ graph LR
+    A(outerFunction) --> B((outerVariable))
+    B --> A
+    A -- Closure --> C(innerFunction)
+    C -->|Link| B
+    C --> D(outerVariable)
+
 ```
 
 In this Markdown diagram, the execution contexts are represented by boxes, and the memory sections are denoted by indentation within those boxes. The arrow represents the closure link between `innerFunction` and `outerVariable`, indicating that `innerFunction` has access to the outer variable through closure.
