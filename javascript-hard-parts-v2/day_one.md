@@ -86,7 +86,7 @@ Here are some of the key points from the video:
 * The `copyArrayAndMultiplyBy2UsingMap` function is a more concise and easier-to-read version of the `copyArrayAndMultiplyBy2` function.
 * The `map()` function is a powerful tool that can be used to simplify code and make it easier to read.
 
-## repealing functions:
+## repeating functions:
 ``` javascript
 function tensquared (){
 return 10*10;
