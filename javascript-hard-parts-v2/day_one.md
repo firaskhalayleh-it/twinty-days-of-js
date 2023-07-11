@@ -25,7 +25,7 @@ const squareList = arr => {
 const squaredIntegers = squareList([4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]);
 console.log(squaredIntegers);
 ```
-### homework [tow](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs)
+### homework [two](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs)
 ``` javascript
 // Only change code below this line
 function urlSlug(title) {
