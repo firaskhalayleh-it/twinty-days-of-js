@@ -9,11 +9,7 @@ It allows functions to remember data from previous executions and facilitates th
 Understanding closure involves grasping local memory,execution context, and functions with memories. In summary, closure empowers developers to build advanced functions, optimize performance, and enhance code structure.
 
 
-## Closure in JavaScript
-
-Closure is a powerful concept in JavaScript that involves returning functions from other functions. It enables the creation of professional-level functions and provides optimization capabilities. Understanding closure is essential for leveraging its benefits effectively.
-
-### Returning Functions from Functions
+## Returning Functions from Functions
 
 Functions can be returned from other functions in JavaScript. This concept is crucial for understanding closure. When a function is returned from another function, it can be assigned to a variable and invoked later. The returned function retains access to variables and data from its outer function, even after the outer function has finished executing.
 
