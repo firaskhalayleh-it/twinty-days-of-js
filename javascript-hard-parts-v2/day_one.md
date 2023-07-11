@@ -115,13 +115,14 @@ const result = copyArrayAndManipulate([1, 2, 3], multiplyByTwo);
 console.log(result); // [2, 4, 6]
 ```
 
-This function takes two arguments: an array and a function. The function argument is a callback function that is passed each element of the array. The callback function is responsible for manipulating the element in some way. In this case, the callback function is multiplyByTwo, which simply multiplies the element by 2.
+This code defines a higher-order function called `copyArrayAndManipulate`. This function takes two arguments: an array and a function. The function argument is a callback function that is passed each element of the array. The callback function is responsible for manipulating the element in some way. In this case, the callback function is `multiplyByTwo`, which simply multiplies the element by 2.
 
-The copyArrayAndManipulate function iterates through the array and calls the callback function for each element. The result of the callback function is then pushed onto the output array. The output array is then returned.
+The `copyArrayAndManipulate` function iterates through the array and calls the callback function for each element. The result of the callback function is then pushed onto the output array. The output array is then returned.
 
-In this example, the callback function is multiplyByTwo. However, any function can be used as the callback function. This makes copyArrayAndManipulate a very versatile function. It can be used to manipulate arrays in any way that you want.
+In this example, the callback function is `multiplyByTwo`. However, any function can be used as the callback function. This makes `copyArrayAndManipulate` a very versatile function. It can be used to manipulate arrays in any way that you want.
 
 To run this code, you can save it as a JavaScript file and then open it in a JavaScript debugger. You can also run it in the browser by pasting it into the console.
+
 
 
 
