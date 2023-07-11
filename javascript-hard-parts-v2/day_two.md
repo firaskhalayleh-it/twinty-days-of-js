@@ -1,7 +1,8 @@
 # Closure in JavaScript
-## introduction
 - it enable us to not repeat calculations or tasks that take usually long time .
 - every time function runs it creates a new local memory.after finish running code (return the value/result) it delete the exception context of it.
+
+## introduction
 
 Closure is a powerful concept in JavaScript that enables the creation of professional-level functions and optimization techniques.
 It allows functions to remember data from previous executions and facilitates the implementation of design patterns.
