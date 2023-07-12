@@ -68,4 +68,75 @@ Closure plays a crucial role in various aspects of JavaScript development, inclu
 ```
 
 
+## Calling Functions in the Same Function Call
+
+In JavaScript, we can call a function within the same function call in which it was defined. This behavior has interesting consequences and is crucial to understanding closure. Let's explore an example that sheds light on this concept.
+
+```javascript
+function outer() {
+  let counter = 0;
+
+  function incrementCounter() {
+    counter++;
+    console.log(counter);
+  }
+
+  incrementCounter();
+}
+
+outer();
+```
+
+In this example, we have the `outer` function that defines a `counter` variable and an `incrementCounter` function. Inside `incrementCounter`, we increment the `counter` by one and log its value. Finally, we call `incrementCounter` within the `outer` function.
+
+When we invoke `outer`, it creates a new execution context and stores the `counter` variable in its local memory. Next, it defines the `incrementCounter` function within the `outer` execution context and executes it immediately.
+
+Here comes the interesting part. When `incrementCounter` tries to access the `counter` variable, it first looks for it in its own local memory. Since it doesn't find it there, it then searches in the outer (parent) execution context, which in this case is the `outer` function's execution context.
+
+This ability to access variables from the parent execution context, even when a function is called within the same function call, demonstrates the concept of closure. In this example, `incrementCounter` can access and modify the `counter` variable because it was defined in the same function call as the one in which it is executed.
+
+Understanding this behavior is crucial for grasping the fundamentals of closure and its implications in JavaScript. It sets the foundation for more advanced concepts and techniques involving closure.
+
+
+```
+                             +-------------------+
+                             |                   |
+                             |   Global Memory   |
+                             |                   |
+                             +--------+----------+
+                                      |
+                                      |
+                                      |      +-------------------------------+
+                                      |      |                               |
+                                      |      |      outer Execution Context  |
+                                      |      |                               |
+                                      +------|-------------------------------+
+                                             |       outer Local Memory      |
+                                             |                               |
+                                             |  counter: 0                   |
+                                             |  incrementCounter: <function> |
+                                             |                               |
+                                             +-------------------------------+
+                                                         |
+                                                         |
+                                              +-----------------------+
+                                              |                       |
+                                              |  incrementCounter()   |
+                                              |  Execution Context    |
+                                              |                       |
+                                              |  incrementCounter     |
+                                              +-----------------------+
+```
+
+In this diagram, we have the global memory represented at the top. Within the global memory, we have the `outer` function defined.
+
+When we invoke the `outer` function, it creates a new execution context called the `outer` execution context. Inside the `outer` execution context, the local memory is created to store variables and functions specific to that execution context. In this case, the `counter` variable is initialized with a value of 0, and the `incrementCounter` function is defined.
+
+Now, when the `incrementCounter` function is executed, it creates a new execution context called the `incrementCounter` execution context. This execution context has its own local memory.
+
+When `incrementCounter` tries to access the `counter` variable, it first looks for it in its own local memory. If it doesn't find it there, it moves up the scope chain and searches for it in the parent execution context, which is the `outer` execution context. In this case, it finds the `counter` variable in the `outer` execution context and increments its value.
+
+The diagram visually represents the relationship between the global memory, the `outer` execution context, and the `incrementCounter` execution context, showcasing how variables can be accessed within the same function call.
+
+
 
