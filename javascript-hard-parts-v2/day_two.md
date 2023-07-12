@@ -136,7 +136,7 @@ Now, when the `incrementCounter` function is executed, it creates a new executio
 
 When `incrementCounter` tries to access the `counter` variable, it first looks for it in its own local memory. If it doesn't find it there, it moves up the scope chain and searches for it in the parent execution context, which is the `outer` execution context. In this case, it finds the `counter` variable in the `outer` execution context and increments its value.
 
-The diagram visually represents the relationship between the global memory, the `outer` execution context, and the `incrementCounter` execution context, showcasing how variables can be accessed within the same function call.
+
 
 
 
