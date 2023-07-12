@@ -196,3 +196,29 @@ Certainly! Here are the questions and their corresponding answers in Markdown co
 5. Error propagation works through the chain of references in nested operations. If an error occurs in an operation, it can propagate through the chain, making it easier to track and handle errors.
 6. The contents of the backpack can be viewed during debugging using tools like the Chrome DevTools. These tools provide the ability to inspect the function's backpack and see its associated data.
 7. If a variable in `outer` is not referenced by the returned function, it will not be stored in the backpack. The function only carries the data that it needs, so any unused variables will not be included.
+
+
+## Closure Functions and Persistent Memories
+
+Closure functions have a persistent store of data attached to them, like a cache, which gives us a new toolkit for writing professional code. They allow us to create helper functions that remember their previous input-output combinations, providing a way to store and reuse data.
+
+## Memorization and Persistent Data
+
+Memorization is the practice of storing previously computed values to avoid redundant calculations. It is useful when dealing with tasks that require significant computation time. By storing the results in a function's backpack (closure), we can retrieve the value instead of recalculating it, improving performance.
+
+## Lexical Scoping and Closure
+
+Lexical scoping, a feature of JavaScript, allows functions to access data from their parent scope. When we create a function inside another function, it carries the entire environment with it, including all the variables in the backpack. This allows the inner function to access and use the data from the outer function.
+
+## The Backpack (Closure)
+
+The backpack, also known as closure, refers to the persistent storage of data attached to a function. It contains the variables and values from the function's parent scope, allowing the function to access and use that data even when executed elsewhere. The backpack is a powerful tool for creating functions with persistent memories.
+
+## Benefits and Use Cases
+
+The backpack (closure) offers several benefits, including the ability to lock down functions to prevent multiple executions and to store and retrieve previously calculated values. It is useful in scenarios such as creating winning functions in games or implementing efficient computations that rely on previously computed data.
+
+## Lexical Scope and Static Scoping
+
+JavaScript uses lexical scoping, also known as static scoping, where the scope of a variable is determined by its physical placement in the code. This means that a function carries its scope with it and has access to the data from the environment where it was defined. The static scoping rule ensures that the function retains access to its parent scope even when executed elsewhere.
+
