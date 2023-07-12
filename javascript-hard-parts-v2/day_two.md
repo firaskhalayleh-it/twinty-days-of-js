@@ -138,5 +138,41 @@ When `incrementCounter` tries to access the `counter` variable, it first looks f
 
 
 
+## Function and Closure
+
+This text discusses the concept of functions and closures in JavaScript. It follows a dialogue between Will Sentance and participants. Here are the key points covered:
+
+- Functions can be stored in variables and have their own local memory when called.
+- When a function is returned from another function, it carries with it a backpack of surrounding data attached to its definition.
+- The returned function can access and manipulate the surrounding data even when it is called outside of its original context.
+- The surrounding data is stored in the function's hidden scope property, allowing it to be accessed when the function is executed.
+- The surrounding data is private and can only be accessed by running the function.
+- The function definition, along with its attached surrounding data, can be stored and reused.
+
+This feature of JavaScript allows for powerful and elegant programming techniques, enabling functions to retain and manipulate data from their original context.
 
 
+```javascript
+// Example: Returning a function with its surrounding data
+function outer() {
+  let counter = 0;
+
+  function incrementCounter() {
+    counter++;
+    console.log(counter);
+  }
+
+  return incrementCounter;
+}
+
+const myNewFunction = outer();
+myNewFunction(); // Output: 1
+myNewFunction(); // Output: 2
+myNewFunction(); // Output: 3
+```
+
+In this example, we have a function called `outer` that defines a local variable `counter` and a nested function `incrementCounter`. The `incrementCounter` function increments the `counter` variable and logs its value to the console.
+
+When we call `outer` and assign its return value to `myNewFunction`, we are actually capturing the `incrementCounter` function along with its surrounding data, which includes the `counter` variable. This is possible because of closure. 
+
+Subsequently, when we invoke `myNewFunction`, it still has access to the `counter` variable even though it is no longer directly within the scope of the `outer` function. Each time we call `myNewFunction`, the `counter` value is incremented and logged to the console.
