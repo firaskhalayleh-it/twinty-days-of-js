@@ -19,7 +19,6 @@ Closure allows for the creation of advanced functions and optimization technique
 
 ### Example
 
-Here's an example that demonstrates closure in JavaScript:
 
 ```javascript
 function outerFunction() {
@@ -153,7 +152,6 @@ This feature of JavaScript allows for powerful and elegant programming technique
 
 
 ```javascript
-// Example: Returning a function with its surrounding data
 function outer() {
   let counter = 0;
 
@@ -176,3 +174,25 @@ In this example, we have a function called `outer` that defines a local variable
 When we call `outer` and assign its return value to `myNewFunction`, we are actually capturing the `incrementCounter` function along with its surrounding data, which includes the `counter` variable. This is possible because of closure. 
 
 Subsequently, when we invoke `myNewFunction`, it still has access to the `counter` variable even though it is no longer directly within the scope of the `outer` function. Each time we call `myNewFunction`, the `counter` value is incremented and logged to the console.
+
+Certainly! Here are the questions and their corresponding answers in Markdown code:
+
+**Questions from session:**
+
+1. Can you have a backpack of the second level? (referring to nested execution contexts)
+2. Can you have a callback function that accesses the surrounding data?
+3. Is the data stored in the backpack considered private?
+4. How does scope come into play?
+5. How does error propagation work in nested operations?
+6. How can the contents of the backpack be viewed during debugging?
+7. What happens if a variable in `outer` is not referenced by the returned function?
+
+**Answers:**
+
+1. Yes, nested execution contexts can have their own backpacks. It forms a chain where each level has its associated data stored in the backpack.
+2. Yes, it is possible to pass a callback function that can access the surrounding data. This is often used in functional programming techniques like function decoration.
+3. The term "private" can be subjective and language-dependent. While the data in the backpack is not directly accessible outside the function, it may not be entirely private as it can still be accessed through the function itself.
+4. Scope determines the visibility and accessibility of variables. In this context, the function can access variables from its surrounding scope by referring to the data stored in its backpack.
+5. Error propagation works through the chain of references in nested operations. If an error occurs in an operation, it can propagate through the chain, making it easier to track and handle errors.
+6. The contents of the backpack can be viewed during debugging using tools like the Chrome DevTools. These tools provide the ability to inspect the function's backpack and see its associated data.
+7. If a variable in `outer` is not referenced by the returned function, it will not be stored in the backpack. The function only carries the data that it needs, so any unused variables will not be included.
