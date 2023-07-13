@@ -19,7 +19,7 @@ setTimeout(printHello, 1000);
 
 // Log "Me first" to the console
 console.log("Me first");
-```
+
 
 The execution flows as follows:
 
