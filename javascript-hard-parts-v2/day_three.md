@@ -36,6 +36,22 @@ The session concludes with an exercise for participants to analyze code that uti
 
 
 
+## Execution Model and Web Browser Features in JavaScript
+
+
+- The text discusses the limitations of single-threaded execution in JavaScript, where each line must finish before moving on.
+- Tasks that involve communication with servers, such as retrieving tweets from Twitter, can cause delays in code execution.
+- JavaScript lacks the ability to wait for tasks to complete before moving on to other code.
+- The text introduces the concept of using web browser features, such as timers and network requests, in JavaScript code.
+- Examples are given, such as using setTimeout to delay function execution and making network requests to retrieve data.
+- The order of execution and the interaction between JavaScript and web browser features are explained.
+- The need for strict rules to govern the behavior of JavaScript when interacting with web browser features is emphasized.
+- The concept of blocking code execution using tasks like for loops is introduced.
+
+
+Please note that the title can be modified according to your preferences.
+
+
 In this code explanation, the focus is on understanding how JavaScript interacts with the web browser features. The code example uses the `setTimeout` function, which is a web browser feature labeled in JavaScript. It sets up a timer that will trigger the execution of a function after a specified delay.
 
 Here's a summary of the code execution:
