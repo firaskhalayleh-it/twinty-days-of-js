@@ -219,7 +219,7 @@ The backpack, also known as closure, refers to the persistent storage of data at
 The backpack (closure) offers several benefits, including the ability to lock down functions to prevent multiple executions and to store and retrieve previously calculated values. It is useful in scenarios such as creating winning functions in games or implementing efficient computations that rely on previously computed data.
 
 ## Lexical Scope and Static Scoping
-
+JavaScript uses lexical scoping, also known as static scoping, where the scope of a variable is determined by its physical placement in the code. This means that a function carries its scope with it and has access to the data from the environment where it was defined. The static scoping rule ensures that the function retains access to its parent scope even when executed elsewhere.
 
 
 # homeworks:
