@@ -1,7 +1,18 @@
 # day three :
 
-## JavaScript and Web Browser Interaction
-```markdown
+## Asynchronous Programming in JavaScript
+
+In this session, Will Sentance introduces the concept of asynchronous programming in JavaScript. He starts by discussing promises as an addition to the traditional ES5 callback model. Promises provide a way to handle asynchronous operations in a more readable and organized manner.
+
+Will explains that JavaScript's asynchronicity is what enables dynamic web applications and simultaneous operations in a single-threaded language. He mentions the event loop, which determines the order of code execution, and the micro task queue, an important aspect of web browser features.
+
+The session then dives into the execution of regular code, where data is stored in global memory. Constants and functions are defined, and function results are stored in variables. New execution contexts are created for function calls, and the code inside functions is executed. Once the function code is completed, the execution context is closed, and the program moves to the next line of code.
+
+Finally, the session covers the declaration and assignment of values to new variables.
+
+Overall, this session provides an overview of the key concepts and mechanisms involved in asynchronous programming in JavaScript.
+
+
 
 
 In this code explanation, the focus is on understanding how JavaScript interacts with the web browser features. The code example uses the `setTimeout` function, which is a web browser feature labeled in JavaScript. It sets up a timer that will trigger the execution of a function after a specified delay.
