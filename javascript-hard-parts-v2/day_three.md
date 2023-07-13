@@ -13,6 +13,27 @@ Finally, the session covers the declaration and assignment of values to new vari
 Overall, this session provides an overview of the key concepts and mechanisms involved in asynchronous programming in JavaScript.
 
 
+## Asynchronous JavaScript and Web Browser Features
+
+In this session, Will Sentance discusses the challenges posed by JavaScript's single-threaded and synchronous nature. He highlights the problem of blocking code execution when waiting for slow tasks, such as network requests or rendering.
+
+To address this issue, JavaScript leverages web browser features through facade functions. These features include timers, the HTML DOM, network request capabilities, console, and more. These functions provide an interface for JavaScript to interact with the browser and access its functionalities.
+
+Will explains that JavaScript alone cannot perform tasks like delaying function execution or making network requests. Instead, it relies on these web browser features to accomplish such tasks.
+
+The session emphasizes the distinction between JavaScript, which runs in the browser's JavaScript engine, and the web browser itself, which contains additional features beyond JavaScript.
+
+The session concludes with an exercise for participants to analyze code that utilizes the set timeout function and encourages them to consider the order of execution based on their understanding of web browser features and JavaScript's synchronous nature.
+
+| Browser Features                           | JavaScript Equivalent  | Command                |
+|--------------------------------------------|------------------------|------------------------|
+| Rendering and DOM Manipulation              | Document Object Model  | N/A                    |
+| Network Communication                       | XMLHttpRequest (XHR)   | fetch, AJAX, XHR       |
+| Timers and Asynchronous Execution           | setTimeout, setInterval| setTimeout, setInterval|
+| User Interaction and Events                 | Event listeners        | addEventListener      |
+| Web APIs and Browser Features               | Various JavaScript APIs| N/A                    |
+| Developer Tools                             | Console object         | console.log, console.error, etc. |
+
 
 
 In this code explanation, the focus is on understanding how JavaScript interacts with the web browser features. The code example uses the `setTimeout` function, which is a web browser feature labeled in JavaScript. It sets up a timer that will trigger the execution of a function after a specified delay.
@@ -104,11 +125,3 @@ Web browsers provide several features that enhance the capabilities of JavaScrip
 
 
 
-| Browser Features                           | JavaScript Equivalent  | Command                |
-|--------------------------------------------|------------------------|------------------------|
-| Rendering and DOM Manipulation              | Document Object Model  | N/A                    |
-| Network Communication                       | XMLHttpRequest (XHR)   | fetch, AJAX, XHR       |
-| Timers and Asynchronous Execution           | setTimeout, setInterval| setTimeout, setInterval|
-| User Interaction and Events                 | Event listeners        | addEventListener      |
-| Web APIs and Browser Features               | Various JavaScript APIs| N/A                    |
-| Developer Tools                             | Console object         | console.log, console.error, etc. |
