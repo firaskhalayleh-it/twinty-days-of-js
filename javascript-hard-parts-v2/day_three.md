@@ -35,7 +35,7 @@ It's important to note that the `setTimeout` function and other web browser feat
 ```
 
 Please note that the diagram is not included in the Markdown format, but you can refer to the original response for the diagram explanation.
-Certainly! Here's a diagram illustrating the execution flow of the code example:
+
 
 ```
                                         JavaScript Execution
@@ -84,6 +84,7 @@ Certainly! Here's a diagram illustrating the execution flow of the code example:
 |                                                                                          |
 +------------------------------------------------------------------------------------------+
 ```
+
 
 This diagram illustrates the flow of execution in the code example. The `setTimeout` function is called, which sets up a timer in the web browser. Meanwhile, the JavaScript code continues executing and logs "Me first" to the console. After the specified delay, the timer in the web browser triggers the execution of the `printHello` function, which logs "Hello" to the console.
 
