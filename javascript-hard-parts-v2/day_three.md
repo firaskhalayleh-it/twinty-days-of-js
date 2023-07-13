@@ -19,7 +19,7 @@ setTimeout(printHello, 1000);
 
 // Log "Me first" to the console
 console.log("Me first");
-
+```
 
 The execution flows as follows:
 
@@ -32,7 +32,7 @@ The execution flows as follows:
 7. The `printHello` function is executed and the message "Hello" is logged to the console.
 
 It's important to note that the `setTimeout` function and other web browser features are not part of JavaScript itself but are accessible through JavaScript as facade functions. Understanding this interaction between JavaScript and the web browser features helps explain the behavior of asynchronous operations in JavaScript.
-```
+
 
 Please note that the diagram is not included in the Markdown format, but you can refer to the original response for the diagram explanation.
 
