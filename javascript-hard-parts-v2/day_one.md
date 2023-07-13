@@ -254,3 +254,18 @@ urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"))
     
   
 ```
+
+```javascript
+const sumRange =(range,sum) =>{
+    
+    if (range <= 0){
+        return sum;
+    }
+    
+    return sumRange(range-1,sum + range);
+}
+const result = sumRange(4, 0);
+console.log(result);
+
+```
+
