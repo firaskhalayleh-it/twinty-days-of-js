@@ -255,6 +255,7 @@ urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"))
   
 ```
 
+2.
 ```javascript
 const sumRange =(range,sum) =>{
     
