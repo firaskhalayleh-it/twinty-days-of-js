@@ -25,6 +25,8 @@ The session emphasizes the distinction between JavaScript, which runs in the bro
 
 The session concludes with an exercise for participants to analyze code that utilizes the set timeout function and encourages them to consider the order of execution based on their understanding of web browser features and JavaScript's synchronous nature.
 
+Web browsers provide several features that enhance the capabilities of JavaScript within the browser environment :
+
 | Browser Features                           | JavaScript Equivalent  | Command                |
 |--------------------------------------------|------------------------|------------------------|
 | Rendering and DOM Manipulation              | Document Object Model  | N/A                    |
@@ -139,7 +141,6 @@ Please note that the diagram is not included in the Markdown format, but you can
 This diagram illustrates the flow of execution in the code example. The `setTimeout` function is called, which sets up a timer in the web browser. Meanwhile, the JavaScript code continues executing and logs "Me first" to the console. After the specified delay, the timer in the web browser triggers the execution of the `printHello` function, which logs "Hello" to the console.
 
 
-Web browsers provide several features that enhance the capabilities of JavaScript within the browser environment:
 
 
 
