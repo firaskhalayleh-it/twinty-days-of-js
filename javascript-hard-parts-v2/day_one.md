@@ -241,4 +241,14 @@ return res;
 console.log(
 urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"))
 ```
-### homework [three][]
+### homework three:
+1. ``` javascript
+   const mapAsync =async(array,callback)=>{
+    let newArray  = [];
+    for (let element of array){
+       newArray.push(await callback(element))
+      
+    }
+    return Promise.resolve(newArray)
+    
+}```
