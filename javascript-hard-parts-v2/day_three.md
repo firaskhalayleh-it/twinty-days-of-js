@@ -89,6 +89,9 @@ This diagram illustrates the flow of execution in the code example. The `setTime
 
 
 Web browsers provide several features that enhance the capabilities of JavaScript within the browser environment:
+
+
+
 | Browser Features                           | JavaScript Equivalent  | Command                |
 |--------------------------------------------|------------------------|------------------------|
 | Rendering and DOM Manipulation              | Document Object Model  | N/A                    |
