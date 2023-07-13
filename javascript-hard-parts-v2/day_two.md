@@ -220,5 +220,92 @@ The backpack (closure) offers several benefits, including the ability to lock do
 
 ## Lexical Scope and Static Scoping
 
-JavaScript uses lexical scoping, also known as static scoping, where the scope of a variable is determined by its physical placement in the code. This means that a function carries its scope with it and has access to the data from the environment where it was defined. The static scoping rule ensures that the function retains access to its parent scope even when executed elsewhere.
+
+
+# homeworks:
+
+### Homework 1: Compose Function
+
+```javascript
+function compose(...functions) {
+  return function(input) {
+    let result = input;
+    for (let i = 0; i < functions.length - 1; i++) {
+      if (typeof functions[i] === 'function') {
+        result = functions[i](result);
+      }
+    }
+    return result;
+  };
+}
+
+// Example usage
+function addOne(num) {
+  return num + 1;
+}
+
+function double(num) {
+  return num * 2;
+}
+
+function square(num) {
+  return num ** 2;
+}
+
+const composedFunction = compose(square, double, addOne);
+console.log(composedFunction(2));
+```
+
+
+### Homework 2: PowerOf Closure
+
+```javascript
+const powerOf = (base) => {
+  const exp = () => {
+    return Math.pow(base, 2);
+  };
+  return exp;
+};
+
+const result = powerOf(3);
+console.log(result());
+```
+
+
+### Homework 3: CalculateAverage Function
+
+```javascript
+const calculateAverage = (arr, nums) => {
+  let sum = 0;
+  const calculation = () => {
+    for (let num of arr) {
+      sum += num;
+    }
+    return sum / nums;
+  };
+  return calculation;
+};
+
+const value = calculateAverage([32, 42, 34, 23, 4, 2], 6);
+console.log(value());
+```
+
+### Homework 4: CalculateAverage Function (Revised)
+
+```javascript
+const calculateAverage = (arr, nums) => {
+  let sum = 0;
+  const calculation = () => {
+    for (let num of arr) {
+      sum += num;
+    }
+    return sum / nums;
+  };
+  return calculation;
+};
+
+const value = calculateAverage([32, 42, 34, 23, 4, 2], 6);
+console.log(value());
+```
+
 
