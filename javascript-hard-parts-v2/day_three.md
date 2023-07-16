@@ -185,7 +185,6 @@ const task1 = (cb) => setTimeout(() => {
   cb(message);
 }, 3000);
 
-// ... (other tasks)
 
 const asyncTasks = [task1, task2, task3, task4, task5];
 
@@ -194,7 +193,6 @@ const executeInSequenceWithCBs = (tasks, callback) => {
 
   const executeNextTask = (index) => {
     if (index >= tasks.length) {
-      // All tasks have been executed, call the final callback with the results
       callback(results);
       return;
     }
@@ -202,16 +200,13 @@ const executeInSequenceWithCBs = (tasks, callback) => {
     const currentTask = tasks[index];
     currentTask((message) => {
       results.push(message);
-      // Execute the next task in the sequence
       executeNextTask(index + 1);
     });
   };
 
-  // Start executing the tasks from index 0
   executeNextTask(0);
 };
 
-// Example usage:
 executeInSequenceWithCBs(asyncTasks, (results) => {
   console.log(results);
 });
@@ -226,7 +221,6 @@ const apis = [
     apiName: "products",
     apiUrl: "https://dummyjson.com/products",
   },
-  // ... (other API objects)
 ];
 
 const executeInParallelWithPromises = (apis) => {
@@ -243,7 +237,7 @@ const executeInParallelWithPromises = (apis) => {
   return Promise.all(promises);
 };
 
-// Example usage:
+
 executeInParallelWithPromises(apis).then((results) => {
   console.log(results);
 });
@@ -259,7 +253,7 @@ const apis = [
     apiName: "products",
     apiUrl: "https://dummyjson.com/products",
   },
-  // ... (other API objects)
+ 
 ];
 
 const executeInSequenceWithPromises = (apis) => {
@@ -285,11 +279,11 @@ const executeInSequenceWithPromises = (apis) => {
       });
   };
 
-  // Start executing the APIs from index 0
+ 
   return executeNextApi(0);
 };
 
-// Example usage:
+
 executeInSequenceWithPromises(apis).then((results) => {
   console.log(results);
 });
