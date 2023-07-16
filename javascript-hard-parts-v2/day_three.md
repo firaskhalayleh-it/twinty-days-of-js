@@ -170,7 +170,7 @@ Will discusses the `.then()` method, which is a built-in method of Promises. It 
 
 ### Conclusion and Wrap-Up
 
-The text concludes by highlighting the power of Promises in managing asynchronous tasks and maintaining consistency between JavaScript memory and background processes. It emphasizes the importance of using `.then()` to handle data when it is available.
+will concludes by highlighting the power of Promises in managing asynchronous tasks and maintaining consistency between JavaScript memory and background processes. It emphasizes the importance of using `.then()` to handle data when it is available.
 
 Please note that the above summary is based on the provided text and may not cover all aspects in detail. The code examples and diagrams are not available in the text provided, so I cannot include them in this summary. If you have specific code examples or diagrams you would like to include, please provide them, and I'll be happy to help incorporate them into the summary.
 
