@@ -1,4 +1,3 @@
-Sure! Here's the complete text with the original content and the code examples for each section:
 
 # day_four
 ## Accessing Methods on Prototype Objects
@@ -32,7 +31,7 @@ user2.login(); // Output: "Tim logged in"
 
 ## Pros and Cons of Implicit Parameters and Prototypal Inheritance
 
-Here, the text discusses the advantages and drawbacks of using implicit parameters and prototypal inheritance in JavaScript. While implicit parameters simplify method invocation and provide code reusability, they can also lead to potential side effects. Understanding and managing these aspects is crucial for building efficient and maintainable code.
+they are discusses the advantages and drawbacks of using implicit parameters and prototypal inheritance in JavaScript. While implicit parameters simplify method invocation and provide code reusability, they can also lead to potential side effects. Understanding and managing these aspects is crucial for building efficient and maintainable code.
 
 ## Distinguishing `__proto__` from `prototype`
 
@@ -62,7 +61,7 @@ dog1.speak(); // Output: "Buddy makes a sound"
 
 ## The Role of `this` in Different Execution Contexts
 
-The text explores how the `this` keyword behaves in various execution contexts. It explains how the value of `this` is determined based on the object to the left of the dot when invoking a method, as well as how it may behave differently in functions called without an object context.
+The trainer explores how the `this` keyword behaves in various execution contexts. It explains how the value of `this` is determined based on the object to the left of the dot when invoking a method, as well as how it may behave differently in functions called without an object context.
 
 ```javascript
 const person = {
