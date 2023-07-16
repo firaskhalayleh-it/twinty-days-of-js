@@ -174,3 +174,125 @@ will concludes by highlighting the power of Promises in managing asynchronous ta
 
 Please note that the above summary is based on the provided text and may not cover all aspects in detail. The code examples and diagrams are not available in the text provided, so I cannot include them in this summary. If you have specific code examples or diagrams you would like to include, please provide them, and I'll be happy to help incorporate them into the summary.
 
+# homeworks :
+## homework 1
+
+To execute all the tasks inside the `asyncTasks` array in sequence, we can modify the `executeInSequenceWithCBs` function to use recursion and a helper function. The helper function will execute the next task in the array after the current task's callback is called.
+
+```javascript
+const task1 = (cb) => setTimeout(() => {
+  const message = "Task 1 has executed successfully!";
+  cb(message);
+}, 3000);
+
+// ... (other tasks)
+
+const asyncTasks = [task1, task2, task3, task4, task5];
+
+const executeInSequenceWithCBs = (tasks, callback) => {
+  const results = [];
+
+  const executeNextTask = (index) => {
+    if (index >= tasks.length) {
+      // All tasks have been executed, call the final callback with the results
+      callback(results);
+      return;
+    }
+
+    const currentTask = tasks[index];
+    currentTask((message) => {
+      results.push(message);
+      // Execute the next task in the sequence
+      executeNextTask(index + 1);
+    });
+  };
+
+  // Start executing the tasks from index 0
+  executeNextTask(0);
+};
+
+// Example usage:
+executeInSequenceWithCBs(asyncTasks, (results) => {
+  console.log(results);
+});
+```
+
+## homework 2
+To fetch the data of each API in parallel using promises, we can utilize `Promise.all()`. This method takes an array of promises and returns a new promise that resolves to an array of the resolved values of the input promises. We can map over the `apis` array, fetch each API's data using `fetch`, and create a promise for each API request. Then, use `Promise.all()` to wait for all the promises to resolve.
+
+```javascript
+const apis = [
+  {
+    apiName: "products",
+    apiUrl: "https://dummyjson.com/products",
+  },
+  // ... (other API objects)
+];
+
+const executeInParallelWithPromises = (apis) => {
+  const promises = apis.map((api) =>
+    fetch(api.apiUrl).then((response) =>
+      response.json().then((data) => ({
+        apiName: api.apiName,
+        apiUrl: api.apiUrl,
+        apiData: data,
+      }))
+    )
+  );
+
+  return Promise.all(promises);
+};
+
+// Example usage:
+executeInParallelWithPromises(apis).then((results) => {
+  console.log(results);
+});
+```
+
+## homework 3
+
+To fetch the data of each API sequentially using promises, we can use a recursive approach similar to the first question. Instead of using callbacks, we create a promise for each API request, and once one promise is resolved, we initiate the next API request.
+
+```javascript
+const apis = [
+  {
+    apiName: "products",
+    apiUrl: "https://dummyjson.com/products",
+  },
+  // ... (other API objects)
+];
+
+const executeInSequenceWithPromises = (apis) => {
+  const results = [];
+
+  const executeNextApi = (index) => {
+    if (index >= apis.length) {
+      // All APIs have been fetched, return the results
+      return results;
+    }
+
+    const currentApi = apis[index];
+    return fetch(currentApi.apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        results.push({
+          apiName: currentApi.apiName,
+          apiUrl: currentApi.apiUrl,
+          apiData: data,
+        });
+        // Execute the next API in the sequence
+        return executeNextApi(index + 1);
+      });
+  };
+
+  // Start executing the APIs from index 0
+  return executeNextApi(0);
+};
+
+// Example usage:
+executeInSequenceWithPromises(apis).then((results) => {
+  console.log(results);
+});
+```
+
+Please note that the `fetch` function is used to make HTTP requests and obtain the data from the APIs. It is available in modern browsers and Node.js environments.
