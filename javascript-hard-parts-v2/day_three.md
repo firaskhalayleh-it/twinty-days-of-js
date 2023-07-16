@@ -142,5 +142,35 @@ This diagram illustrates the flow of execution in the code example. The `setTime
 
 
 
+To summarize the text and add titles for each subject, let's break it down:
 
+### Introduction to ES2015 (ES6) and Promises
+
+In this section, Will Sentance introduces the concept of Promises in JavaScript and how it changed with the introduction of ES2015 (ES6). He mentions the limitations of using `setTimeout` for background tasks and the need for a way to track and maintain consistency between JavaScript memory and background processes.
+
+### Two-Pronged Facade Functions
+
+Will explains the concept of "two-pronged facade functions" that were introduced in ES6. These functions not only trigger background processes in the web browser (like network requests) but also return a special object called a Promise in JavaScript. The Promise acts as a placeholder that keeps track of the background work and allows developers to know when the task is completed.
+
+### Fetching Data with Fetch API
+
+The Fetch API is introduced as a modern way to make network requests in JavaScript. It replaces the older XMLHttpRequest (XHR) and simplifies the process of sending and receiving data over the internet. Will demonstrates how to use `fetch` to send a request to Twitter for data.
+
+### Promise Object and Its Properties
+
+Will explains the structure of a Promise object, which has two properties: `value` and `onFulfilled`. The `value` property is initially undefined and is used to store the data returned from the background task (in this case, the data fetched from Twitter). The `onFulfilled` property is an array that stores functions to be triggered when the data is available.
+
+### Handling the Returned Data
+
+When the network request is completed and the data is received from Twitter, it is stored in the `value` property of the Promise object. At this point, any functions stored in the `onFulfilled` array are automatically triggered with the data as their input. This allows developers to handle the returned data and perform actions on it, like displaying it on the webpage.
+
+### Using `.then()` for Asynchronous Callbacks
+
+Will discusses the `.then()` method, which is a built-in method of Promises. It allows developers to add functions to the `onFulfilled` array and handle the data when it becomes available. Since the `onFulfilled` property is hidden, developers can't directly push functions to it, but they can use `.then()` to achieve the same result.
+
+### Conclusion and Wrap-Up
+
+The text concludes by highlighting the power of Promises in managing asynchronous tasks and maintaining consistency between JavaScript memory and background processes. It emphasizes the importance of using `.then()` to handle data when it is available.
+
+Please note that the above summary is based on the provided text and may not cover all aspects in detail. The code examples and diagrams are not available in the text provided, so I cannot include them in this summary. If you have specific code examples or diagrams you would like to include, please provide them, and I'll be happy to help incorporate them into the summary.
 
