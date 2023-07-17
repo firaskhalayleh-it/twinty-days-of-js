@@ -194,3 +194,6 @@ console.log(user2.score); // 21
 
 In this example, the `add1` function inside the `increment` method is an arrow function. It retains the reference to `this` from the `increment` method, which allows us to access and modify the object's properties correctly.
 
+
+# homework
+you can see the [homework](https://www.freecodecamp.org/fccc0611f60-8dc0-496f-af4a-d5a9808cdfa6)
