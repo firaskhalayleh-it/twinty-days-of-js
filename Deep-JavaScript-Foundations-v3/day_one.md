@@ -22,6 +22,9 @@ console.log(y);   // Output: 6 (Note: y is coerced to a number before incrementi
 In summary, this introduction sets the tone for the course, emphasizing the significance of understanding JavaScript thoroughly and referring to the official [JavaScript specification](https://tc39.es/ecma262/) as a guide to uncover the language's behavior accurately. Understanding the behavior of JavaScript operators and expressions is crucial for writing bug-free code and avoiding assumptions about the language.
 Sure! Here's the merged text covering the three major topics - "Types," "Scope," and "Objects (Oriented)" - from the course overview:
 
+
+
+
 ## Course Overview
 
 In this course, Kyle Simpson presents three fundamental pillars of JavaScript that are crucial for all JavaScript developers, regardless of the frameworks they use. Understanding these pillars will help developers write more robust and bug-free code.
@@ -54,6 +57,8 @@ In this course, Kyle Simpson presents three fundamental pillars of JavaScript th
 
 2. **Prototypes:** Explore JavaScript's prototype-based inheritance model, where objects inherit properties and methods from their prototypes. Understand how the prototype chain works and how it relates to inheritance.
 
-3. **OO vs. OLOO:** Compare Object-Oriented (OO) and Objects Linked to Other Objects (OLOO) approaches in JavaScript. Understand the benefits and limitations of each pattern and when to use them in your code.
+3. **this Operator:** Understand the behavior of the `this` keyword, which refers to the context of the current execution. Learn how to use `this` correctly in various scenarios to access object properties and methods.
+
+4. **OO vs. OLOO:** Compare Object-Oriented (OO) and Objects Linked to Other Objects (OLOO) approaches in JavaScript. Understand the benefits and limitations of each pattern and when to use them in your code.
 
 These key points provide a concise overview of the major topics covered in the course, laying the groundwork for a more comprehensive understanding of JavaScript's core pillars.
