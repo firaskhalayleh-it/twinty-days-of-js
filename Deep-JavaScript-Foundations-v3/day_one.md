@@ -82,3 +82,10 @@ function convertStringToNumber(input) {
     }
   }
 ```
+
+## number two: 
+``` javascript
+const checkNaN = (value) => {
+  return Number.isNaN(value)
+}
+```
