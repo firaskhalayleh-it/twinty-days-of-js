@@ -103,3 +103,16 @@ function isEmptyValue(value) {
   }
 }
 ```
+
+## number four :
+``` javascript
+function compareObjects(input1, input2) {
+        if (typeof(input1)==='object' && typeof(input2)==='object'){
+            return Object.is(input1,input2)
+        }
+        else {
+            return  [input1,input2]
+}}
+
+
+```
