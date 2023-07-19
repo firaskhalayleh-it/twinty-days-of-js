@@ -29,7 +29,7 @@ Sure! Here's the merged text covering the three major topics - "Types," "Scope,"
 
 In this course, Kyle Simpson presents three fundamental pillars of JavaScript that are crucial for all JavaScript developers, regardless of the frameworks they use. Understanding these pillars will help developers write more robust and bug-free code.
 
-### Types:
+## Types:
 
 1. **Primitive Types:** Explore the different primitive data types in JavaScript, such as numbers, strings, booleans, null, undefined, and symbols. Understand their characteristics and how they are stored in memory.
 
@@ -41,7 +41,7 @@ In this course, Kyle Simpson presents three fundamental pillars of JavaScript th
 
 5. **TypeScript, Flow, etc.:** Get an overview of type systems in TypeScript, Flow, and other tools that add static typing to JavaScript. Understand their benefits and how they complement JavaScript's dynamic typing.
 
-### Scope:
+## Scope:
 
 1. **Nested Scope:** Understand how JavaScript defines scopes within other scopes, allowing access to variables declared in outer functions from inner functions.
 
@@ -51,7 +51,7 @@ In this course, Kyle Simpson presents three fundamental pillars of JavaScript th
 
 4. **Modules:** Explore the modular pattern in JavaScript, where code is organized into separate modules to promote code reusability and maintainability. Understand how closures are used to create private variables and functions within modules.
 
-### Objects (Oriented):
+## Objects (Oriented):
 
 1. **class {}:** Learn about the `class` syntax, which is a newer addition to JavaScript and provides a more familiar syntax for object-oriented programming. Understand how classes are used to create constructor functions and define methods.
 
@@ -62,7 +62,7 @@ In this course, Kyle Simpson presents three fundamental pillars of JavaScript th
 4. **OO vs. OLOO:** Compare Object-Oriented (OO) and Objects Linked to Other Objects (OLOO) approaches in JavaScript. Understand the benefits and limitations of each pattern and when to use them in your code.
 
 These key points provide a concise overview of the major topics covered in the course, laying the groundwork for a more comprehensive understanding of JavaScript's core pillars.
-# types :
+
 **Primitive Types:**
 
 JavaScript has six primitive types: 
