@@ -225,3 +225,5 @@ myModule.publicFunction(); // Output: "I am private"
 ## Best Practices for Working with Scopes in JavaScript
 
 Avoid global variables, use block scoping to avoid bugs, create modules to encapsulate functionality, understand the scope chain, and use closures to create private variables and functions. Apply these concepts in your JavaScript code to improve its readability, maintainability, and efficiency.
+---
+# homework 
