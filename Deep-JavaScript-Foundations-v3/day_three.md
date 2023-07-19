@@ -206,3 +206,5 @@ const multiply = (a, b) => a * b; // Babel can transpile this arrow function for
 ## Conclusion
 
 In conclusion, understanding lexical scope, utilizing block scoping, and following best practices are essential for writing clean and efficient JavaScript code. Using helpful tools like ESLint, Prettier, and Babel further enhances code quality and productivity. Writing quality JavaScript is an ongoing journey that requires staying up-to-date with the latest best practices and language features. Happy coding!
+
+# homeworks :
