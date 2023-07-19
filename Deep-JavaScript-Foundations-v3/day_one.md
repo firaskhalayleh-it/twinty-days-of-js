@@ -62,7 +62,171 @@ In this course, Kyle Simpson presents three fundamental pillars of JavaScript th
 4. **OO vs. OLOO:** Compare Object-Oriented (OO) and Objects Linked to Other Objects (OLOO) approaches in JavaScript. Understand the benefits and limitations of each pattern and when to use them in your code.
 
 These key points provide a concise overview of the major topics covered in the course, laying the groundwork for a more comprehensive understanding of JavaScript's core pillars.
+# types :
+**Primitive Types:**
 
+JavaScript has six primitive types: 
+
+1. **Number**: This includes all numeric values, both integers and floating-point numbers.
+
+```javascript
+let num = 42;
+let pi = 3.14;
+```
+
+2. **String**: Represents a sequence of characters enclosed in single or double quotes.
+
+```javascript
+let name = "John";
+let message = 'Hello, world!';
+```
+
+3. **Boolean**: Represents a true or false value.
+
+```javascript
+let isTrue = true;
+let isFalse = false;
+```
+
+4. **Undefined**: A variable that has been declared but not assigned any value automatically gets the value `undefined`.
+
+```javascript
+let x;
+console.log(x); // Output: undefined
+```
+
+5. **Null**: Represents an intentional absence of any value.
+
+```javascript
+let myVariable = null;
+```
+
+6. **Symbol**: A unique and immutable data type used to create anonymous unique identifiers.
+
+```javascript
+const sym = Symbol("description");
+```
+
+Primitive values are not objects and have a fixed size, making them more memory-efficient. However, they can be used as objects because JavaScript creates wrapper objects for primitives using the concept of fundamental objects.
+
+**Typeof:**
+
+The `typeof` operator in JavaScript is used to determine the type of a given value. However, it has some limitations.
+
+```javascript
+console.log(typeof 42); // Output: "number"
+console.log(typeof "Hello"); // Output: "string"
+console.log(typeof true); // Output: "boolean"
+console.log(typeof undefined); // Output: "undefined"
+console.log(typeof null); // Output: "object" (historical mistake)
+console.log(typeof NaN); // Output: "number" (technically invalid number)
+```
+
+To work around the limitations of `typeof` when checking for `null` and `NaN`, you can use `Object.prototype.toString`.
+
+```javascript
+console.log(Object.prototype.toString.call(null)); // Output: "[object Null]"
+console.log(Object.prototype.toString.call(NaN)); // Output: "[object Number]"
+```
+
+**BigInt:**
+
+BigInt is a new feature introduced in ES2020 to represent integers of arbitrary precision.
+
+```javascript
+const largeNumber = BigInt(9007199254740991);
+console.log(largeNumber); // Output: 9007199254740991n
+```
+
+BigInts are immutable, and regular numbers cannot be mixed with BigInts in mathematical operations.
+
+```javascript
+const bigIntValue = 100n;
+const regularNumber = 42;
+
+console.log(bigIntValue + regularNumber); // Error: Cannot mix BigInt and other types
+```
+
+**Kinds of Emptiness:**
+
+In JavaScript, there are three types of emptiness: `undefined`, `undeclared`, and `uninitialized`.
+
+```javascript
+let declaredVar; // This variable is declared but not initialized, so it is undefined.
+console.log(declaredVar); // Output: undefined
+
+// console.log(undeclaredVar); // Error: undeclaredVar is not defined (not declared).
+
+// Uninitialized variables do not exist in JavaScript.
+
+function myFunction() {
+  let localVar; // This variable is declared but not initialized, so it is undefined.
+  console.log(localVar); // Output: undefined
+}
+```
+
+To avoid creating global variables accidentally, you can use strict mode.
+
+```javascript
+"use strict";
+
+undeclaredVar = 10; // Error: undeclaredVar is not defined
+```
+
+**NaN-isNaN:**
+
+NaN stands for "Not a Number" and is a special value in JavaScript that represents an invalid or unrepresentable number.
+
+```javascript
+console.log(0 / 0); // Output: NaN
+console.log(parseInt("Hello")); // Output: NaN
+```
+
+The `isNaN()` function can be used to check if a value is NaN.
+
+```javascript
+console.log(isNaN(NaN)); // Output: true
+console.log(isNaN(42)); // Output: false
+console.log(isNaN("Hello")); // Output: true
+```
+
+To check for a valid number, you can use `Number.isNaN()`.
+
+```javascript
+console.log(Number.isNaN(NaN)); // Output: true
+console.log(Number.isNaN(42)); // Output: false
+console.log(Number.isNaN("Hello")); // Output: false
+```
+
+**Negative Zero:**
+
+JavaScript has both positive zero and negative zero, and they behave differently in certain scenarios.
+
+```javascript
+let positiveZero = 0;
+let negativeZero = -0;
+```
+
+To check for the existence of negative zero, you can use `Object.is()`.
+
+```javascript
+console.log(Object.is(positiveZero, 0)); // Output: true
+console.log(Object.is(negativeZero, 0)); // Output: false
+console.log(positiveZero === negativeZero); // Output: true
+```
+
+Negative zero can be useful in specific situations, like distinguishing between different directions or temperature values.
+
+```javascript
+function getDirection(angle) {
+  return angle === 0 ? "North" : angle === -0 ? "South" : "Unknown";
+}
+
+console.log(getDirection(0)); // Output: "North"
+console.log(getDirection(-0)); // Output: "South"
+```
+
+Overall, understanding these concepts and their implications can help developers write more robust and reliable JavaScript code.
 
 # homeworks :
 ## number one:
