@@ -281,7 +281,7 @@ function compareObjects(input1, input2) {
 
 ```
 ## number five : 
-``` javascirpt
+``` javascript
 const complexCoercion = (input) => {
   if (typeof input !== "object" ) {
     if (typeof input === "number") {
