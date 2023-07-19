@@ -116,3 +116,25 @@ function compareObjects(input1, input2) {
 
 
 ```
+## number five : 
+``` javascirpt
+const complexCoercion = (input) => {
+  if (typeof input !== "object" ) {
+    if (typeof input === "number") {
+      input.toString();
+      return Boolean(input);
+    } else if (typeof input === "string") {
+      return Boolean(input);
+    }
+    else if ((typeof input === 'undefined')){
+        return false;
+    }
+  }
+  else if (input === null ){
+      return false
+  }
+  else {
+    return input;
+  }
+};
+```
