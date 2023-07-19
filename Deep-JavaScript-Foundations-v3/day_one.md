@@ -62,3 +62,23 @@ In this course, Kyle Simpson presents three fundamental pillars of JavaScript th
 4. **OO vs. OLOO:** Compare Object-Oriented (OO) and Objects Linked to Other Objects (OLOO) approaches in JavaScript. Understand the benefits and limitations of each pattern and when to use them in your code.
 
 These key points provide a concise overview of the major topics covered in the course, laying the groundwork for a more comprehensive understanding of JavaScript's core pillars.
+
+
+# homeworks :
+## number one:
+``` javascript
+function convertStringToNumber(input) {
+    if (typeof(input)==='string'){
+        if (Number.isNaN(+input)){
+            return `${typeof(input)} , ${input} : invalid number`
+        }
+        else{
+            return +input
+        }
+       
+    }
+    else {
+        return `${typeof(input)} , ${input}`
+    }
+  }
+```
