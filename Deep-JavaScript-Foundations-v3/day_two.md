@@ -227,6 +227,64 @@ myModule.publicFunction(); // Output: "I am private"
 Avoid global variables, use block scoping to avoid bugs, create modules to encapsulate functionality, understand the scope chain, and use closures to create private variables and functions. Apply these concepts in your JavaScript code to improve its readability, maintainability, and efficiency.
 ---
 # homework 
+## number one :
+``` typescript
+interface HelloWorldResponse {
+  message: string;
+}
+
+interface CheckBooleanResponse {
+  result: boolean;
+}
+
+interface ReturnObjResponse {
+  x: string;
+  y: number;
+}
+
+type PromiseResponse = HelloWorldResponse | CheckBooleanResponse | ReturnObjResponse;
+
+const sayHelloWorld = new Promise<HelloWorldResponse>((resolve, reject) => {
+  resolve({ message: "Hello world!" });
+});
+
+const checkBoolean = (boolean: boolean) => new Promise<CheckBooleanResponse>((resolve, reject) => {
+  if (boolean) {
+    resolve({ result: boolean });
+  } else {
+    reject(`Input is false :(`)
+  }
+});
+
+const returnObj = new Promise<ReturnObjResponse>((resolve, reject) => {
+  resolve({
+    x: "meow",
+    y: 45,
+  });
+});
+
+const promisesArray: Promise<PromiseResponse>[] = [sayHelloWorld, checkBoolean(true), returnObj];
+
+const convertToObj = async (array: Promise<PromiseResponse>[]): Promise<{ [key: string]: PromiseResponse }> => {
+  const obj: { [key: string]: PromiseResponse } = {};
+  
+  for (let i = 0; i < array.length; i++) {
+    try {
+      const result = await array[i];
+      obj[`promise${i + 1}`] = result;
+    } catch (error) {
+      obj[`promise${i + 1}`] = { error: error.message };
+    }
+  }
+  
+  return obj;
+}
+
+convertToObj(promisesArray).then((result) => {
+  console.log(result);
+});
+
+```
 
 ---
 ## number two :
