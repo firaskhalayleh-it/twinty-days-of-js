@@ -89,3 +89,17 @@ const checkNaN = (value) => {
   return Number.isNaN(value)
 }
 ```
+## number three :
+``` javascript
+function isEmptyValue(value) {
+  if (
+    typeof value === "undefined" ||
+    typeof(value) === 'string' &&value.length === 0 ||
+    typeof value === "object" && value === null
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
