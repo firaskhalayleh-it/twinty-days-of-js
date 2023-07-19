@@ -227,3 +227,25 @@ myModule.publicFunction(); // Output: "I am private"
 Avoid global variables, use block scoping to avoid bugs, create modules to encapsulate functionality, understand the scope chain, and use closures to create private variables and functions. Apply these concepts in your JavaScript code to improve its readability, maintainability, and efficiency.
 ---
 # homework 
+
+---
+## number two :
+Sure, here are the answers without code examples:
+
+**Answer to Question #1:**
+
+Choice: D) 1, ReferenceError
+
+Explanation: `var a` is hoisted and accessible throughout the function. `let b` and `const c` have block scope, so they are only accessible within the if block. Trying to access `b` and `c` outside the block will result in a ReferenceError.
+
+**Answer to Question #2:**
+
+Choice: A) undefined, ReferenceError
+
+Explanation: Variables `a`, `b`, and `c` are declared inside the if block, so they are not hoisted and cannot be accessed before their declarations, resulting in ReferenceError.
+
+**Answer to Question #3:**
+
+Choice: C) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 1, 100, 45 ]
+
+Explanation: Variables `a`, `b`, and `c` are declared inside and outside the if block. Inside the block, new variables are created, which have a separate scope from the outer ones. After the if block, the outer variables retain their original values, while the inner variables are discarded.
