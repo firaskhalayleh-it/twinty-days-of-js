@@ -96,3 +96,98 @@ To avoid confusion and potential bugs due to hoisting, it's recommended to follo
 - Declare functions before calling them, especially when using function expressions or arrow functions.
 
 Understanding hoisting is essential for writing clean, predictable, and maintainable JavaScript code. By being aware of how hoisting works, you can avoid potential issues and write more robust programs.
+
+## Closures:
+
+In programming, a closure is a concept that refers to the ability of a function to "remember" and maintain access to its lexical scope, even when the function is executed outside of that scope. In simpler terms, a closure allows a function to capture and preserve the variables and their values in the scope where the function was created. These captured variables become part of the function's "closure," and they remain accessible even after the outer function has finished executing.
+
+### How Closures Work:
+
+When a function is defined within another function, the inner function retains access to the outer function's variables and parameters, creating a closure. This behavior is a result of JavaScript's scoping rules, which allow inner functions to access variables in their containing outer function.
+
+**Example:**
+
+```javascript
+function outerFunction() {
+  const outerVariable = 'I am from the outer function';
+  
+  function innerFunction() {
+    console.log(outerVariable); // The inner function has access to outerVariable
+  }
+
+  return innerFunction;
+}
+
+const closureFunction = outerFunction();
+closureFunction(); // Output: I am from the outer function
+```
+
+In the example above, the `innerFunction` is defined within the `outerFunction`. When `outerFunction` is called, it returns `innerFunction`, creating a closure. As a result, `innerFunction` still has access to the `outerVariable`, even though `outerFunction` has already finished executing.
+
+### Practical Uses of Closures:
+
+Closures are powerful and have various practical applications in JavaScript. Some common use cases include:
+
+1. **Encapsulation:** Closures allow you to create private variables and functions within an outer function. This concept is often used in the module pattern to create encapsulated components.
+
+2. **Partial Functions:** Closures can be used to create partial functions, where you pre-fill some arguments of a function and return a new function that takes the remaining arguments.
+
+3. **Callbacks and Event Handling:** Closures are widely used in asynchronous programming, where they help maintain the context and state of the surrounding code.
+
+## Module Patterns and ES6 Modules:
+
+In JavaScript, module patterns are used to encapsulate and organize code into reusable, self-contained units. They help avoid global namespace pollution, promote code reusability, and improve maintainability.
+
+### CommonJS (Node.js) Module Pattern:
+
+In Node.js, the CommonJS module pattern is used to organize code into modules. Each module is encapsulated, and its functionality is exposed through the `module.exports` object. Other modules can then require this module using the `require()` function.
+
+**Example:**
+
+**greet.js** (module file):
+```javascript
+function sayHello(name) {
+  return `Hello, ${name}!`;
+}
+
+module.exports = {
+  sayHello,
+};
+```
+
+**app.js** (main application file):
+```javascript
+const greetings = require('./greet');
+console.log(greetings.sayHello('John')); // Output: Hello, John!
+```
+
+### ES6 Modules (ESM):
+
+ES6 introduced native support for modules in JavaScript. Instead of using the CommonJS pattern, ES6 modules use the `import` and `export` statements for exporting and importing functionality.
+
+**Example:**
+
+**greet.js** (module file):
+```javascript
+export function sayHello(name) {
+  return `Hello, ${name}!`;
+}
+```
+
+**app.js** (main application file):
+```javascript
+import { sayHello } from './greet';
+console.log(sayHello('John')); // Output: Hello, John!
+```
+
+### Differences between CommonJS and ES6 Modules:
+
+1. **Syntax:** CommonJS uses `require()` and `module.exports` for imports and exports, respectively, while ES6 modules use `import` and `export`.
+
+2. **Dynamic vs. Static:** CommonJS modules are evaluated and loaded at runtime, which makes it more flexible for dynamic loading. On the other hand, ES6 modules are statically analyzed during parsing, enabling better optimization by JavaScript engines.
+
+3. **Browser Support:** CommonJS modules are primarily used in server-side environments like Node.js, while ES6 modules are designed for both server-side and client-side (browsers) applications.
+
+4. **Top-level Scope:** In CommonJS, each module has its own scope, and all code within a module is executed immediately. In ES6 modules, the top-level scope is not executed immediately, and you can choose which variables and functions to export.
+
+In modern JavaScript development, ES6 modules are becoming the standard, as they offer better performance, static analysis, and a more natural syntax compared to the CommonJS pattern used in Node.js.
