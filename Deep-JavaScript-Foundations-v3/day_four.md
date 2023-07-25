@@ -250,7 +250,6 @@ console.log(privateCounter.getCount()); // Output: 2
 ## homework five : 
 ``` javascript
 const generateFibonacci = (count) => {
-  let currentCount = 0;
 
   const fibonacci = (currentCount) => {
     if (currentCount === 0) {
@@ -265,7 +264,7 @@ const generateFibonacci = (count) => {
   return fibonacci;
 };
 
-// Example usage:
+
 const fib = generateFibonacci(10);
 for (let i = 0; i < 10; i++) {
   console.log(fib(i));
