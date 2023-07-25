@@ -191,3 +191,24 @@ console.log(sayHello('John')); // Output: Hello, John!
 4. **Top-level Scope:** In CommonJS, each module has its own scope, and all code within a module is executed immediately. In ES6 modules, the top-level scope is not executed immediately, and you can choose which variables and functions to export.
 
 In modern JavaScript development, ES6 modules are becoming the standard, as they offer better performance, static analysis, and a more natural syntax compared to the CommonJS pattern used in Node.js.
+
+# homeworks : 
+## homework one :
+``` javascript
+for (var i = 0; i < 5; i++) {
+  (function (index) {
+    setTimeout(function() {
+      console.log("value of [i] is: ", index);
+    }, 100);
+  })(i);
+}
+```
+## homework two : 
+``` javascript
+let array = [];
+for (let i = 0; i < 5; i++) {
+   
+   array.push(i);
+   console.log("Current array is: ", array)
+}
+```
