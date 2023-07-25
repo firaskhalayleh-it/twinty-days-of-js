@@ -212,3 +212,14 @@ for (let i = 0; i < 5; i++) {
    console.log("Current array is: ", array)
 }
 ```
+## homework three : 
+``` javascript
+let functions = [];
+
+for (var i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+functions.forEach((func) => func());
+}
+```
