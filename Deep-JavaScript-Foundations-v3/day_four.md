@@ -223,3 +223,52 @@ for (var i = 0; i < 5; i++) {
 functions.forEach((func) => func());
 }
 ```
+## homework four : 
+``` javascript
+const privateCounter = (() => {
+  let count = 0;
+
+  const increment = () => {
+    count++;
+  };
+
+  const getCount = () => {
+    return count;
+  };
+
+  return {
+    increment,
+    getCount
+  };
+})();
+
+// Example usage:
+privateCounter.increment();
+privateCounter.increment();
+console.log(privateCounter.getCount()); // Output: 2
+```
+## homework five : 
+``` javascript
+const generateFibonacci = (count) => {
+  let currentCount = 0;
+
+  const fibonacci = (currentCount) => {
+    if (currentCount === 0) {
+      return 0;
+    } else if (currentCount === 1) {
+      return 1;
+    } else {
+      return fibonacci(currentCount - 1) + fibonacci(currentCount - 2);
+    }
+  };
+
+  return fibonacci;
+};
+
+// Example usage:
+const fib = generateFibonacci(10);
+for (let i = 0; i < 10; i++) {
+  console.log(fib(i));
+}
+```
+
