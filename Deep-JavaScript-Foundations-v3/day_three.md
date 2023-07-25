@@ -208,3 +208,62 @@ const multiply = (a, b) => a * b; // Babel can transpile this arrow function for
 In conclusion, understanding lexical scope, utilizing block scoping, and following best practices are essential for writing clean and efficient JavaScript code. Using helpful tools like ESLint, Prettier, and Babel further enhances code quality and productivity. Writing quality JavaScript is an ongoing journey that requires staying up-to-date with the latest best practices and language features. Happy coding!
 
 # homeworks :
+
+## homework one : 
+``` javascript
+const exampleNormalFunc1 = (a, b, c) => {
+  return a * (b + c);
+};
+
+const exampleNormalFunc2 = (x, y) => {
+  return x * y;
+};
+
+const exampleNormalFunc3 = (string) => {
+  return string + " " + string + " " + string + "!";
+};
+
+const arrowHOF = (normalFunc) => {
+  return (...args1) => {
+    return (...args2) => {
+      const result1 = normalFunc(...args1);
+      const result2 = normalFunc(...args2);
+      console.log(result1, result2);
+    };
+  };
+};
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs 60 twice
+console.log(hofNormalFunc2(20, 35)(4)); // logs 700 four times
+console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
+```
+## homework two :
+
+``` javascript
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+const preserveThis = (func) => {
+  return (...args) => {
+    return func.call(this, ...args);
+  };
+};
+
+const preservedGreet = preserveThis(obj.greet);
+
+preservedGreet('Hello'); // Output: "Hello, John!"
+```
+## homework three : 
+example one  : 
+- When outer1 is called, it sets the variable x to 10, and then immediately calls the inner1 function. The inner1 function logs the value of x (which is 10) to the console. Since inner1 has access to the x variable defined in its containing scope (outer1), it logs the value of x as 10.
+--------------
+example two : 
+- When outer2 is called, it sets the outer variable x to 10 and then immediately calls the inner2 function. The inner2 function has its own local variable x, which is different from the outer variable x, so it logs at the console (20).
